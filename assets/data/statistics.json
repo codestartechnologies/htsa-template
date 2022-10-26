@@ -1,0 +1,16 @@
+{
+    "frontpage"     : [
+        {
+            "label" : "lives lost on N.G roads in 2022",
+            "value" : "38,824"
+        },
+        {
+            "label" : "drunk-driving fatalities",
+            "value" : "11,654"
+        },
+        {
+            "label" : "speeding related traffic deaths",
+            "value" : "11,258"
+        }
+    ]
+}

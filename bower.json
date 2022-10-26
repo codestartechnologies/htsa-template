@@ -1,7 +1,7 @@
 {
   "name": "htsa-template",
   "description": "Highway Traffic Safety Administration HTML website template",
-  "main": "index.js",
+  "private": true,
   "authors": [
     "Codestar Technologies"
   ],
@@ -20,6 +20,12 @@
     "tests"
   ],
   "devDependencies": {
-    "semantic": "semantic-ui#^2.5.0"
+    "semantic": "semantic-ui#^2.5.0",
+    "jquery": "^3.6.1",
+    "bootstrap": "^5.2.2",
+    "metismenu": "^3.0.7",
+    "animate-css": "^4.1.1",
+    "waypoints": "waypoint#^4.0.1",
+    "tiny-slider": "^2.9.4"
   }
 }

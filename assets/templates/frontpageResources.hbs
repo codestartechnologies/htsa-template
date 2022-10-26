@@ -1,0 +1,23 @@
+
+{{#each frontpage}}
+
+    <div>
+        <div class="ui raised card rounded-0 mb-5 mx-auto">
+            <div class="center aligned content">
+
+                {{#if ($not_empty image_url)}}
+
+                    <img src="{{image_url}}" alt="" class="ui tiny image" />
+
+                {{/if}}
+
+                <div class="ui dividing header fw-normal text-capitalize htsa-ff-roboto mb-3"> {{title}} </div>
+                <div class="description fw-normal mb-4"> {{description}} </div>
+            </div>
+            <a href="{{action_url}}" class="ui bottom attached black button htsa-text-yellow text-capitalize">
+                {{action_text}} <i class="right angle icon"></i>
+            </a>
+        </div>
+    </div>
+
+{{/each}}

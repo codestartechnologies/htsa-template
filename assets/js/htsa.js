@@ -1,0 +1,119 @@
+/**
+ * htsa js - 0.1.0
+ * https://codestar.com.ng
+ *
+ * Copyright 2022 Codestar Technologies
+ * Released under AGPL-3.0-or-later
+ * https://www.gnu.org/licenses/agpl-3.0.en.html
+ */
+
+jQuery( function($) {
+
+    const mobileSidebar = $('[data-htsa-id="mobileSidebar"]');
+    const mobileMenu = $('[data-htsa-id="mobileMenu"]');
+    const PCMenu = $('[data-htsa-id="headerMenu"]');
+    const PCMenuSearchModal = $('[data-htsa-id="searchModal"]');
+    const counterUp = window.counterUp.default;
+    const statisticsValue = $('[data-htsa-id="statisticsValue"]');
+    const openStreetMap = $('[data-htsa-id="openStreetMap"]');
+    const frontpageCarouselLeft = $('[data-htsa-id="frontpageCarouselLeft"]');
+    const featuredBlogCarousel = $('[data-htsa-id="featuredBlogCarousel"]');
+    const fixedPCMenuSetter = $('[data-htsa-id="fixedPCMenuSetter"]');
+
+    /***
+     * Mobile Sidebar
+     */
+    if (mobileSidebar.length) {
+        mobileSidebar.first().sidebar({
+            dimPage: false
+        }).sidebar('attach events', '[data-htsa-toggle="mobileSidebar"]');
+    }
+
+    /**
+     * Mobile Menu
+     */
+    if (mobileMenu.length) {
+        mobileMenu.metisMenu({
+            triggerElement: '.htsa-dropdown-link',
+            parentTrigger: '.htsa-dropdown-item',
+            subMenu: '.htsa-dropdown-menu'
+        });
+    }
+
+    /**
+     * Search Modal
+     */
+    if (PCMenuSearchModal.length) {
+        PCMenuSearchModal.first().modal({
+            blurring: true,
+            closable: false
+        }).modal('attach events', '[data-htsa-toggle="searchModal"]');
+    }
+
+    /**
+     * OpenStreetMap
+     */
+    if (openStreetMap.length) {
+        openStreetMap.embed();
+    }
+
+    /**
+     * Statistics
+     */
+    if (statisticsValue.length) {
+        statisticsValue.each(function () {
+            let element = this;
+            new Waypoint({
+                element: element,
+                handler: function (direction) {
+                    counterUp(element, {
+                        duration: 3000
+                    });
+                    this.destroy();
+                },
+                offset: 'bottom-in-view'
+            });
+        });
+    }
+
+    /**
+     * Carousel
+     */
+    if (frontpageCarouselLeft.length) {
+        tns({
+            container: '[data-htsa-id="frontpageCarouselLeft"]',
+            mode: 'gallery',
+            items: 1,
+            autoplay: true,
+            controls: false,
+            nav: false,
+            autoplayButtonOutput: false
+        });
+    }
+
+    if (featuredBlogCarousel.length) {
+        tns({
+            container: '[data-htsa-id="featuredBlogCarousel"]',
+            items: 1,
+            autoplay: true,
+            controls: false,
+            autoplayButtonOutput: false
+        });
+    }
+
+    /**
+     * PC Header Menu
+     */
+    if (fixedPCMenuSetter.length && PCMenu.length) {
+        fixedPCMenuSetter.visibility({
+            once: false,
+            onBottomPassed: function () {
+                //
+            },
+            onBottomPassedReverse: function () {
+                //
+            },
+        });
+    }
+
+} );

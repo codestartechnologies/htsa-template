@@ -1,0 +1,327 @@
+/**
+ * htsa css - 0.1.0
+ * https://codestar.com.ng
+ *
+ * Copyright 2022 Codestar Technologies
+ * Released under AGPL-3.0-or-later
+ * https://www.gnu.org/licenses/agpl-3.0.en.html
+ */
+
+/* Reboot */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;900&family=Poppins:wght@200;300;400&family=Roboto:wght@100;400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.htsa-h-initial {
+    height: initial;
+}
+
+/* Utilities */
+
+/* Text */
+
+.htsa-ff-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.htsa-ff-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.htsa-ff-roboto-slab {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/* Colors */
+
+.htsa-text-yellow {
+    color: #ffcc29 !important;
+}
+
+.htsa-text-hover-yellow:hover {
+    color: #ffcc29 !important;
+}
+
+.htsa-text-dark {
+    color: #000000 !important;
+}
+
+.htsa-text-hover-dark:hover {
+    color: #000000 !important;
+}
+
+.htsa-text-brown {
+    color: #a52a2a !important;
+}
+
+.htsa-text-hover-primary:hover {
+    color: #0d6efd !important;
+}
+
+
+/* Backgrounds */
+
+.htsa-bg-yellow {
+    background-color: #ffcc29 !important;
+}
+
+.htsa-bg-dark {
+    background-color: #000000 !important;
+}
+
+/* Transitions */
+
+.htsa-link-transition {
+    transition: color .6s ease-in-out !important;
+}
+
+
+/* Components */
+
+/* Buttons */
+
+
+/* Mobile Menu */
+
+[data-htsa-id="mobileSidebar"],
+[data-htsa-id="mobileMenu"] {
+    background-color: #dfe5e8 !important;
+}
+
+[data-htsa-id="mobileMenu"] .item {
+    color: #5f727f !important;
+    font-size: 1.063rem;
+}
+
+[data-htsa-id="mobileMenu"] .active.item,
+[data-htsa-id="mobileMenu"] .htsa-dropdown-item .htsa-dropdown-menu .item:hover {
+    color: #000000 !important;
+}
+
+
+/* Header Menu */
+
+[data-htsa-id="headerMenu"] i.icon {
+    color: #ffffff !important;
+}
+
+
+/* PC Menu */
+
+[data-htsa-id="pcMenuRight"] .item {
+    font-weight: 700 !important;
+    font-size: 1.063rem;
+    transition: color .5s ease-in-out !important;
+    color: #ffffff !important;
+}
+
+[data-htsa-id="pcMenuRight"] .item::after {
+    background-color: #000000 !important;
+}
+
+[data-htsa-id="pcMenuRight"] .dropdown.item .menu.htsa-dropdown-menu .item {
+    color: #cac9c9 !important;
+    background-color: inherit !important;
+    text-transform: capitalize !important;
+}
+
+[data-htsa-id="pcMenuRight"] .active.item,
+[data-htsa-id="pcMenuRight"] .item:hover,
+[data-htsa-id="pcMenuRight"] .dropdown.item .menu.htsa-dropdown-menu .item:hover {
+    color: #ffcc29 !important;
+}
+
+[data-htsa-id="pcMenuRight"] .simple.dropdown.item:hover .menu.htsa-dropdown-menu {
+    animation-name: fadeInUp;
+    animation-duration: 300ms;
+    animation-timing-function: ease;
+}
+
+/* Footer Menu */
+
+footer .htsa-footer-menu .nav-item a {
+    color: #cac9c9;
+    font-size: inherit;
+}
+
+footer .htsa-footer-menu .nav-item a:hover {
+    color: #ffcc29;
+}
+
+footer .htsa-footer-social-menu .list-group-item {
+    border: 0;
+    border-radius: 0 !important;
+    padding: .1rem .5rem;
+    transition: all 100ms linear;
+}
+
+footer .htsa-footer-social-menu .list-group-item:hover {
+    background-color: #000000;
+}
+
+
+/* Front Page */
+
+/* About HTSA */
+
+.htsa-about-section .nav-item i {
+    height: initial;
+}
+
+.htsa-about-section .nav-link {
+    color: #007dc2;
+    text-decoration: underline !important;
+    transition: all .30s ease;
+}
+
+.htsa-about-section .nav-link:hover {
+    opacity: .6;
+}
+
+.htsa-about-section p {
+    font-size: 1rem;
+}
+
+
+/* Statistics */
+
+[data-htsa-id="statisticsValue"] {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.125rem;
+}
+
+[data-htsa-id="statisticsLabel"] {
+    display: block;
+    width: 80%;
+    font-size: 0.75rem;
+    letter-spacing: 0.063rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Call To Action */
+
+.htsa-action-call-btn {
+    width: 100%;
+    max-width: 240px;
+    border-width: 2px;
+}
+
+/* Image Background */
+.htsa-background-image {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.htsa-background-image-scroll {
+    background-attachment:scroll;
+}
+
+.htsa-background-image-overlay {
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.htsa-background-image-overlay-white {
+    background-color: #010f914d;
+}
+
+.htsa-background-image-content {
+    width: 97%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+/* Carousel */
+
+[data-htsa-id="frontpageCarouselLeft"] .htsa-background-image {
+    display: none;
+}
+
+/* Resources */
+
+[data-htsa-id="frontpageResources"] .card {
+    transition: transform .4s ease;
+}
+
+[data-htsa-id="frontpageResources"] .card > :last-child {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+[data-htsa-id="frontpageResources"] .card:hover {
+    transform: translateY(-1.563rem);
+}
+
+/* Frontpage Blogs */
+
+[data-htsa-id="featuredBlogCarousel"] > div {
+    display: none;
+    padding: 0 0.25rem 0.25rem;
+}
+
+[data-htsa-id="featuredBlogCarousel"] .card > :first-child,
+[data-htsa-id="latestBlogs"] .card > :first-child {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+[data-htsa-id="latestBlogs"] img {
+    transition: transform .9s ease;
+}
+
+[data-htsa-id="latestBlogs"] img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Slider Dots */
+
+.htsa-slider-dots .tns-nav {
+    text-align: center;
+    /* z-index: 999; */
+    padding-bottom: 1rem;
+}
+
+.htsa-slider-dots .tns-nav > [aria-controls] {
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    width: .5em;
+    height: .5em;
+    vertical-align: baseline;
+    padding: .5em !important;
+    line-height: 1em;
+    text-align: center;
+    border-radius: 500rem;
+    display: inline-block;
+    margin: 0 .14285714em;
+    background-color: #e8e8e8;
+    color: rgba(0,0,0,.6);
+    text-transform: none;
+    font-weight: 700;
+    border: 0 solid transparent;
+    transition: background-color .1s ease;
+}
+
+.htsa-slider-dots .tns-nav > .tns-nav-active {
+    background: #999;
+}

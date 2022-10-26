@@ -1,0 +1,139 @@
+/**
+ * htsa responsive css - 0.1.0
+ * https://codestar.com.ng
+ *
+ * Copyright 2022 Codestar Technologies
+ * Released under AGPL-3.0-or-later
+ * https://www.gnu.org/licenses/agpl-3.0.en.html
+ */
+
+/* Mobile Screens Only */
+
+@media screen and (max-width: 768px) {
+    /*  */
+}
+
+/* Tablet Screens */
+
+@media screen and (min-width: 768px) {
+    /* Image Background */
+    .htsa-background-image {
+        height: 320px;
+    }
+
+    /* About HTSA */
+    .htsa-about-section .nav-link {
+        font-size: 0.938rem;
+    }
+
+    .htsa-about-section p {
+        font-size: 1.15rem;
+    }
+}
+
+/* Tablet Screens and Below */
+
+@media screen and (max-width: 991px) {
+    /* PC Menu */
+    [data-htsa-id="pcMenuRight"] {
+        display: none !important;
+    }
+}
+
+/* Small Monitor Screens */
+
+@media screen and (min-width: 992px) {
+    /* Mobile Sidebar */
+    [data-htsa-toggle="mobileSidebar"] {
+        display: none !important;
+    }
+
+    /* Header Menu */
+    [data-htsa-id="headerMenu"] img.htsa-pc-menu-logo {
+        width: 4.7rem !important;
+    }
+
+    /* PC Menu */
+    [data-htsa-id="pcMenuRight"] .dropdown.item .menu.htsa-dropdown-menu {
+        min-width: calc(100% + 80px);
+    }
+
+    /* Footer Menu */
+    footer .htsa-footer-menu .nav-item {
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    footer .htsa-footer-menu .nav-item:not(:last-child) {
+        border-right: 1px solid #4e4e4e;
+    }
+
+    footer .htsa-footer-menu .nav-item .nav-link {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /* Statistics */
+    [data-htsa-id="statisticsValue"] {
+        font-size: 5.625rem;
+        font-weight: 200;
+    }
+
+    [data-htsa-id="statisticsLabel"] {
+        width: 55%;
+        font-size: 0.75rem;
+    }
+
+    /* Image Background */
+    .htsa-background-image {
+        height: 420px;
+    }
+
+    .htsa-background-image-content {
+        width: 60%;
+    }
+
+    /* Carousel */
+    [data-htsa-id="frontpageCarouselLeft"] .htsa-background-image {
+        height: 560px;
+    }
+
+    /* Carousel Aside */
+    [data-htsa-id="frontpageCarouselAside"] h1 {
+        font-size: 2.3rem !important;
+    }
+
+    [data-htsa-id="frontpageCarouselAside"] p {
+        font-weight: 500 !important;
+        margin-bottom: 2.5rem;
+    }
+}
+
+/* Small Monitor Screens And Below */
+
+@media screen and (max-width: 1200px) {
+    /*  */
+}
+
+/* Large Monitor Screens And Greater */
+
+@media screen and (min-width: 1200px) {
+    /* Image Background */
+    .htsa-background-image {
+        height: 500px;
+    }
+
+    /* Carousel */
+    [data-htsa-id="frontpageCarouselLeft"] .htsa-background-image {
+        height: 620px;
+    }
+
+    /* Carousel Aside */
+    [data-htsa-id="frontpageCarouselAside"] {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 85%;
+    }
+}

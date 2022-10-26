@@ -1,0 +1,179 @@
+{
+    "mobile"    : [
+        {
+            "label"     : "news",
+            "url"       : "#",
+            "active"    : true,
+            "dropdown"  : [
+                {
+                    "label"     : "MD",
+                    "url"       : "#"
+                },
+                {
+                    "label"     : "press releases",
+                    "url"       : "#"
+                },
+                {
+                    "label"     : "events / programs",
+                    "url"       : "#"
+                },
+                {
+                    "label"     : "other news",
+                    "url"       : "#"
+                }
+            ]
+        },
+        {
+            "label"     : "principal officers",
+            "url"       : "#",
+            "active"    : true
+        },
+        {
+            "label"     : "our responsibilities",
+            "url"       : "#"
+        },
+        {
+            "label"     : "resources",
+            "url"       : "#",
+            "dropdown"  : [
+                {
+                    "label"     : "events / programs",
+                    "url"       : "#"
+                },
+                {
+                    "label"     : "offices",
+                    "url"       : "#"
+                },
+                {
+                    "label"     : "careers",
+                    "url"       : "#"
+                },
+                {
+                    "label"     : "speeches and presentations",
+                    "url"       : "#"
+                }
+            ]
+        },
+        {
+            "label"     : "traffic offense penalty",
+            "url"       : "#"
+        },
+        {
+            "label"     : "contact",
+            "url"       : "#"
+        }
+    ],
+    "pc"        : [
+        {
+            "label"     : "news",
+            "url"       : "#",
+            "active"    : true,
+            "dropdown"  : [
+                {
+                    "label"     : "press releases",
+                    "url"       : "#"
+                },
+                {
+                    "label"     : "events / programs",
+                    "url"       : "#"
+                },
+                {
+                    "label"     : "MD",
+                    "url"       : "#"
+                },
+                {
+                    "label"     : "other news",
+                    "url"       : "#"
+                }
+            ]
+        },
+        {
+            "label"     : "principal officers",
+            "url"       : "#"
+        },
+        {
+            "label"     : "our responsibilities",
+            "url"       : "#"
+        },
+        {
+            "label"     : "events / programs",
+            "url"       : "#"
+        }
+    ],
+    "footer"    : [
+        {
+            "label"     : "news",
+            "url"       : "#"
+        },
+        {
+            "label"     : "principal officers",
+            "url"       : "#"
+        },
+        {
+            "label"     : "our responsibilities",
+            "url"       : "#"
+        },
+        {
+            "label"     : "events / programs",
+            "url"       : "#"
+        },
+        {
+            "label"     : "site",
+            "url"       : "#"
+        },
+        {
+            "label"     : "resources",
+            "url"       : "#"
+        }
+    ],
+    "sitelinks"     : [
+        {
+            "label"     : "offices",
+            "url"       : "#"
+        },
+        {
+            "label"     : "careers",
+            "url"       : "#"
+        },
+        {
+            "label"     : "highway safety grant programs",
+            "url"       : "#"
+        },
+        {
+            "label"     : "press releases",
+            "url"       : "#"
+        },
+        {
+            "label"     : "speeches and presentations",
+            "url"       : "#"
+        },
+        {
+            "label"     : "events / programs",
+            "url"       : "#"
+        },
+        {
+            "label"     : "our responsibilities",
+            "url"       : "#"
+        },
+        {
+            "label"     : "principal officers",
+            "url"       : "#"
+        },
+        {
+            "label"     : "contact",
+            "url"       : "#"
+        },
+        {
+            "label"     : "about",
+            "url"       : "#"
+        },
+        {
+            "label"     : "traffic offense penalty",
+            "url"       : "#"
+        },
+        {
+            "label"     : "MD",
+            "url"       : "#"
+        }
+    ]
+}

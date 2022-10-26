@@ -1,0 +1,39 @@
+{
+    "frontpage": [
+        {
+            "image_url"     : "./assets/images/anambra-icon.png",
+            "title"         : "Driver License Registeration",
+            "description"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at quas esse recusandae veritatis incidunt minima debitis obcaecati.",
+            "action_text"   : "get a license",
+            "action_url"    : ""
+        },
+        {
+            "image_url"     : "./assets/images/anambra-icon.png",
+            "title"         : "Vehicle Identification Portal",
+            "description"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at quas esse recusandae veritatis incidunt minima debitis obcaecati.",
+            "action_text"   : "identify your vehicle",
+            "action_url"    : ""
+        },
+        {
+            "image_url"     : "./assets/images/anambra-icon.png",
+            "title"         : "Road Transport Safety",
+            "description"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at quas esse recusandae veritatis incidunt minima debitis obcaecati.",
+            "action_text"   : "contact road safety",
+            "action_url"    : ""
+        },
+        {
+            "image_url"     : "./assets/images/anambra-icon.png",
+            "title"         : "Speed Limit Device Portal",
+            "description"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at quas esse recusandae veritatis incidunt minima debitis obcaecati.",
+            "action_text"   : "check it out",
+            "action_url"    : ""
+        },
+        {
+            "image_url"     : "",
+            "title"         : "MD's office",
+            "description"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at quas esse recusandae veritatis incidunt minima debitis obcaecati.",
+            "action_text"   : "contact the md",
+            "action_url"    : ""
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+
+{{#each mobile}}
+
+    {{#if ($not_empty_array dropdown)}}
+
+        <div class="htsa-dropdown-item">
+            <a href="#" class="item px-4 text-uppercase fw-normal htsa-dropdown-link has-arrow" aria-expanded="false"> {{label}} </a>
+            <div class="ui divided list my-0 bg-white htsa-dropdown-menu animate__animated animate__bounce">
+
+                {{#each dropdown}}
+
+                    <a href="{{url}}" class="item border-top py-2 ps-5 fw-light text-capitalize"> {{label}} </a>
+
+                {{/each}}
+
+            </div>
+        </div>
+
+    {{else}}
+
+        <a href="{{url}}" class="{{$activeMenuLink  active}} item px-4 text-uppercase fw-normal"> {{label}} </a>
+
+    {{/if}}
+
+{{/each}}

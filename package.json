@@ -2,9 +2,10 @@
   "name": "htsa-template",
   "version": "0.1.0",
   "description": "Highway Traffic Safety Administration HTML website template",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,11 @@
   },
   "homepage": "https://github.com/codestartechnologies/htsa-template#readme",
   "devDependencies": {
-    "handlebars": "^4.7.7"
+    "counterup2": "^2.0.2",
+    "handlebars": "^4.7.7",
+    "handlebars-loader": "^1.7.2",
+    "path": "^0.12.7",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   }
 }

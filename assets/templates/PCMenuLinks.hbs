@@ -1,0 +1,26 @@
+
+{{#each pc}}
+
+    {{#if ($not_empty_array dropdown)}}
+
+        <div class="ui simple dropdown item px-2">
+            <a href="{{url}}" class="item p-0 text-uppercase"> {{label}} </a>
+            <i class="dropdown icon"></i>
+            <div class="menu htsa-dropdown-menu htsa-bg-dark">
+
+                {{#each dropdown}}
+
+                    <a href="{{url}}" class="item"> {{label}} </a>
+
+                {{/each}}
+
+            </div>
+        </div>
+
+    {{else}}
+
+        <a href="{{url}}" class="{{$activeMenuLink  active}} item px-2 text-uppercase"> {{label}} </a>
+
+    {{/if}}
+
+{{/each}}
