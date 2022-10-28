@@ -8,7 +8,7 @@
     <meta name="description" content="HTML website template for highway traffic safety agencies" />
 
     <!-- Page Title -->
-    <title>Empty Page</title>
+    <title>Contact Page</title>
 
     <!-- Site Icons -->
     <link rel="icon" href="./assets/images/anambra-icon.png" />
@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/list.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/loader.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/menu.min.css" />
+    <link rel="stylesheet" href="./bower_components/semantic/dist/components/message.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/modal.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/placeholder.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/sidebar.min.css" />
@@ -135,9 +136,55 @@
 
         <!-- Main Content -->
         <main>
+
             <div class="container">
-                
+                <h3 class="ui horizontal section header divider text-capitalize">Contact Us</h3>
+                <!-- Contact Section -->
+                <div class="text-muted">
+                    <p class="fs-5 fw-semibold text-dark">HTSA Headquarters</p>
+                    <p>1200 New Jersey Avenue SE.</p>
+                    <p>West Building</p>
+                    <p>Washington, DC 20590</p>
+                    <br>
+                    <p><span class="fw-semibold">E-mail HTSA: </span> <a href="mailto:">Click here</a></p>
+                    <p><span class="fw-semibold">Call HTSA Toll-Free: </span> <a href="tel:+">+234 888-327-4236</a></p>
+                    <p>Monday-Friday, 8 a.m. - 8 p.m. ET, excluding Federal Holidays.</p>
+                    <p><span class="fw-semibold">Media Team: </span> <a href="tel:+">+234 202-366-9550</a> or <a href="mailto:">NHTSAmedia@dot.gov</a></p>
+                    <p><span class="fw-semibold">MD's office </span> (including personnel assistance): <a href="tel:+">+234 202-366-4000</a></p>
+                    <p>
+                        Monday-Friday, 8:30 a.m.-5:30 p.m. ET, excluding Federal Holidays.
+                    </p>
+                </div>
+                <!-- End Contact Section -->
+                <!-- Contact Form ShortCode -->
+                <div class="ui section divider"></div>
+                <h4 class="text-uppercase mb-3">Contact us and we will reply you as soon as possible</h4>
+                <div class="col-lg-6 mx-auto-">
+                    <form action="" method="post" class="ui form" data-htsa-id="contactForm">
+                        <div class="required field">
+                            <label for="htsaContactFormName">Name</label>
+                            <input type="text" name="" id="htsaContactFormName" class="border-secondary rounded-4" />
+                        </div>
+                        <div class="required field">
+                            <label for="htsaContactFormEmail">Email</label>
+                            <input type="text" name="" id="htsaContactFormEmail" class="border-secondary rounded-4" />
+                        </div>
+                        <div class="required field">
+                            <label for="htsaContactFormMessage">Message</label>
+                            <textarea name="" id="htsaContactFormMessage" class="border-secondary rounded-5"></textarea>
+                        </div>
+                        <button type="submit" class="ui black button">Submit</button>
+                        <div class="ui error message"></div>
+                    </form>
+                </div>
+                <!-- End Contact Form ShortCode -->
             </div>
+
+            <div class="ui hidden section divider"></div>
+
+            <!-- Page Sidebar -->
+            <!-- End Page Sidebar -->
+
         </main>
         <!-- End Main Content -->
 

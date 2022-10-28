@@ -81,7 +81,7 @@
 
     [data-htsa-id="statisticsLabel"] {
         width: 55%;
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     /* Image Background */
@@ -89,7 +89,8 @@
         height: 420px;
     }
 
-    .htsa-background-image-content {
+    .htsa-background-image-content-center,
+    .htsa-background-image-content-left {
         width: 60%;
     }
 
@@ -98,14 +99,9 @@
         height: 560px;
     }
 
-    /* Carousel Aside */
-    [data-htsa-id="frontpageCarouselAside"] h1 {
-        font-size: 2.3rem !important;
-    }
-
-    [data-htsa-id="frontpageCarouselAside"] p {
-        font-weight: 500 !important;
-        margin-bottom: 2.5rem;
+    /* Mayor's Address */
+    [data-htsa-id="mayorAddress"] img {
+        width: 350px;
     }
 
     /* Blogs */
@@ -131,14 +127,5 @@
     /* Carousel */
     [data-htsa-id="frontpageCarouselLeft"] .htsa-background-image {
         height: 620px;
-    }
-
-    /* Carousel Aside */
-    [data-htsa-id="frontpageCarouselAside"] {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        width: 85%;
     }
 }

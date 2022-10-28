@@ -19,6 +19,7 @@ jQuery( function($) {
     const frontpageCarouselLeft = $('[data-htsa-id="frontpageCarouselLeft"]');
     const featuredBlogCarousel = $('[data-htsa-id="featuredBlogCarousel"]');
     const semanticUICheckbox = $('[data-htsa-id="semanticUICheckbox"]');
+    const contactForm = $('[data-htsa-id="contactForm"]');
     const fixedPCMenuSetter = $('[data-htsa-id="fixedPCMenuSetter"]');
 
     /***
@@ -110,16 +111,30 @@ jQuery( function($) {
     }
 
     /**
-     * PC Header Menu
+     * Add validation to contact form widget
+     */
+    if (contactForm.length) {
+        contactForm.form({
+            fields: {
+                htsaContactFormName: ["empty", "regExp[/^\w+$/gi]"],
+                htsaContactFormEmail: ["empty", "regExp[/^\w+$/gi]", "email"],
+                htsaContactFormMessage: ["empty", "regExp[/^\w+$/gi]"]
+            },
+            inline: true
+        });
+    }
+
+    /**
+     * Make PC menu fixed when specified target element is within sight
      */
     if (fixedPCMenuSetter.length && PCMenu.length) {
         fixedPCMenuSetter.visibility({
             once: false,
             onBottomPassed: function () {
-                //
+                PCMenu.addClass('fixed');
             },
             onBottomPassedReverse: function () {
-                //
+                PCMenu.removeClass('fixed');
             },
         });
     }

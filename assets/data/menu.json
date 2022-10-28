@@ -30,7 +30,7 @@
         },
         {
             "label"     : "our responsibilities",
-            "url"       : "#"
+            "url"       : "responsibilities.html"
         },
         {
             "label"     : "resources",
@@ -60,18 +60,18 @@
         },
         {
             "label"     : "contact",
-            "url"       : "#"
+            "url"       : "contact.html"
         }
     ],
     "pc"        : [
         {
-            "label"     : "news",
+            "label"     : "resources",
             "url"       : "#",
             "active"    : true,
             "dropdown"  : [
                 {
-                    "label"     : "press releases",
-                    "url"       : "#"
+                    "label"     : "news",
+                    "url"       : "posts.html"
                 },
                 {
                     "label"     : "events / programs",
@@ -82,8 +82,8 @@
                     "url"       : "#"
                 },
                 {
-                    "label"     : "other news",
-                    "url"       : "#"
+                    "label"     : "contact",
+                    "url"       : "contact.html"
                 }
             ]
         },
@@ -93,11 +93,11 @@
         },
         {
             "label"     : "our responsibilities",
-            "url"       : "#"
+            "url"       : "responsibilities.html"
         },
         {
-            "label"     : "events / programs",
-            "url"       : "#"
+            "label"     : "about us",
+            "url"       : "about.html"
         }
     ],
     "footer"    : [
@@ -111,19 +111,19 @@
         },
         {
             "label"     : "our responsibilities",
-            "url"       : "#"
+            "url"       : "responsibilities.html"
         },
         {
             "label"     : "events / programs",
             "url"       : "#"
         },
         {
-            "label"     : "site",
-            "url"       : "#"
+            "label"     : "contact",
+            "url"       : "contact.html"
         },
         {
-            "label"     : "resources",
-            "url"       : "#"
+            "label"     : "about us",
+            "url"       : "about.html"
         }
     ],
     "sitelinks"     : [
@@ -153,7 +153,7 @@
         },
         {
             "label"     : "our responsibilities",
-            "url"       : "#"
+            "url"       : "responsibilities.html"
         },
         {
             "label"     : "principal officers",
@@ -161,11 +161,11 @@
         },
         {
             "label"     : "contact",
-            "url"       : "#"
+            "url"       : "contact.html"
         },
         {
-            "label"     : "about",
-            "url"       : "#"
+            "label"     : "about us",
+            "url"       : "about.html"
         },
         {
             "label"     : "traffic offense penalty",

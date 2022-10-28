@@ -20,6 +20,7 @@ const postListingsTemplate = require('../templates/postListings.hbs');
 const postCommentsTemplate = require('../templates/postComments.hbs');
 const asideLatestPostsTemplate = require('../templates/asideLatestPosts.hbs');
 const asideTrendingTopicsTemplate = require('../templates/asideTrendingTopics.hbs');
+const postsWidgetTemplate = require('../templates/postsWidgets.hbs');
 
 const menuLinksJSON = require('../data/menu.json');
 const statisticsJSON = require('../data/statistics.json');
@@ -42,6 +43,7 @@ const postListings = $('[data-htsa-id="postListings"]');
 const postComments = $('[data-htsa-id="postComments"]');
 const asideLatestPosts = $('[data-htsa-id="asideLatestPosts"]');
 const asideTrendingTopics = $('[data-htsa-id="asideTrendingTopics"]');
+const postsWidget = $('[data-htsa-id="postsWidget"]');
 
 jQuery(function ($) {
     /**
@@ -133,5 +135,12 @@ jQuery(function ($) {
      */
     if (postComments.length) {
         postComments.prepend(postCommentsTemplate(commentsJSON));
+    }
+
+    /**
+     * Load postsWidgets data
+     */
+    if (postsWidget.length) {
+        postsWidget.prepend(postsWidgetTemplate(blogsJSON));
     }
 });
