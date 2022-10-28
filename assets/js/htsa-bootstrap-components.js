@@ -1,0 +1,1 @@
+import Carousel from "../../bower_components/bootstrap/js/dist/carousel";

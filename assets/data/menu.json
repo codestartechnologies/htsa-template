@@ -103,7 +103,7 @@
     "footer"    : [
         {
             "label"     : "news",
-            "url"       : "#"
+            "url"       : "posts.html"
         },
         {
             "label"     : "principal officers",
@@ -136,8 +136,8 @@
             "url"       : "#"
         },
         {
-            "label"     : "highway safety grant programs",
-            "url"       : "#"
+            "label"     : "news",
+            "url"       : "posts.html"
         },
         {
             "label"     : "press releases",

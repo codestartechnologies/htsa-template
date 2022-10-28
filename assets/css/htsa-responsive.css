@@ -107,6 +107,11 @@
         font-weight: 500 !important;
         margin-bottom: 2.5rem;
     }
+
+    /* Blogs */
+    .htsa-vertical-posts > div:not(:last-child) {
+        border-bottom: 1px solid #dddddd;
+    }
 }
 
 /* Small Monitor Screens And Below */

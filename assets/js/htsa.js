@@ -15,9 +15,10 @@ jQuery( function($) {
     const PCMenuSearchModal = $('[data-htsa-id="searchModal"]');
     const counterUp = window.counterUp.default;
     const statisticsValue = $('[data-htsa-id="statisticsValue"]');
-    const openStreetMap = $('[data-htsa-id="openStreetMap"]');
+    const semanticUIEmbed = $('[data-htsa-id="semanticUIEmbed"]');
     const frontpageCarouselLeft = $('[data-htsa-id="frontpageCarouselLeft"]');
     const featuredBlogCarousel = $('[data-htsa-id="featuredBlogCarousel"]');
+    const semanticUICheckbox = $('[data-htsa-id="semanticUICheckbox"]');
     const fixedPCMenuSetter = $('[data-htsa-id="fixedPCMenuSetter"]');
 
     /***
@@ -51,10 +52,10 @@ jQuery( function($) {
     }
 
     /**
-     * OpenStreetMap
+     * Activate Semantic UI Embed
      */
-    if (openStreetMap.length) {
-        openStreetMap.embed();
+    if (semanticUIEmbed.length) {
+        semanticUIEmbed.embed();
     }
 
     /**
@@ -99,6 +100,13 @@ jQuery( function($) {
             controls: false,
             autoplayButtonOutput: false
         });
+    }
+
+    /**
+     * Customize checkbox
+     */
+    if (semanticUICheckbox.length) {
+        semanticUICheckbox.checkbox();
     }
 
     /**

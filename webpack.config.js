@@ -1,11 +1,20 @@
 const path = require('path');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
-    entry: "./assets/js/htsa-template.js",
+    entry: {
+        htsa_templates: "./assets/js/htsa-template.js",
+        htsa_js: "./assets/js/htsa.js",
+        bootstrap_components_js: "./assets/js/htsa-bootstrap-components.js",
+        htsa_css: "./assets/js/htsa-css.js",
+        bootstrap_components_css: "./assets/js/htsa-scss.js"
+    },
     mode: "production",
     output: {
-        filename: "htsa-template-bundled.js",
-        path: path.resolve(__dirname, "assets/js")
+        filename: "js/[name].min.js",
+        path: path.resolve(__dirname, "assets/dist")
     },
     resolve: {
         fallback: {
@@ -22,7 +31,58 @@ module.exports = {
             {
                 test: /\.hbs$/,
                 use: "handlebars-loader"
+            },
+            {
+                test: /\.s?css$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            esModule: false
+                        }
+                    },
+                    {
+                        loader: "css-loader",
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: "sass-loader",
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
             }
         ]
-    }
+    },
+    devtool: false,
+    plugins: [
+        new webpack.SourceMapDevToolPlugin(),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].min.css',
+            ignoreOrder: true
+        }),
+        new CssMinimizerPlugin()
+    ],
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new CssMinimizerPlugin({
+                minimizerOptions: {
+                    preset: [
+                        "default",
+                        /* {
+                            discardComments: {
+                                removeAll: true
+                            }
+                        } */
+                    ]
+                }
+            }),
+            "..."
+        ]
+    },
+    cache: false
 };

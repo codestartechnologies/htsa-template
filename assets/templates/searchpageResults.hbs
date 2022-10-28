@@ -1,0 +1,29 @@
+
+{{#each results}}
+
+    <div class="row flex-column flex-md-row align-items-center pb-3 mb-5 g-3 g-lg-5">
+        <div class="col-md-4">
+            <a href="{{url}}">
+
+                {{#if ($not_empty thumbnail)}}
+
+                    <img src="{{thumbnail}}" alt="" class="img-fluid" />
+
+                {{else}}
+
+                    <img src="./assets/images/image.png" alt="" class="img-fluid" />
+
+                {{/if}}
+            </a>
+        </div>
+        <div class="col-md-8">
+            <h1 class="fs-4 fw-normal text-capitalize"> <a href="" class="link-dark"> {{title}} </a></h1>
+            <small class="text-muted text-uppercase"> {{post_type}} </small>
+            <p> {{$stringExcerpt content}} </p>
+            <div>
+                <a href="{{url}}" class="btn btn-sm btn-outline-dark text-capitalize rounded-0">see post</a>
+            </div>
+        </div>
+    </div>
+
+{{/each}}

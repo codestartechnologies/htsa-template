@@ -15,11 +15,17 @@ const frontpageStatisticsTemplate = require('../templates/frontpageStatistics.hb
 const frontpageResourcesTemplate = require('../templates/frontpageResources.hbs');
 const frontpageFeaturedBlogsTemplate = require('../templates/frontpageFeaturedBlogs.hbs');
 const frontpageLatestBlogsTemplate = require('../templates/frontpageLatestBlogs.hbs');
+const searchpageResultsTemplate = require('../templates/searchpageResults.hbs');
+const postListingsTemplate = require('../templates/postListings.hbs');
+const asideLatestPostsTemplate = require('../templates/asideLatestPosts.hbs');
+const asideTrendingTopicsTemplate = require('../templates/asideTrendingTopics.hbs');
 
 const menuLinksJSON = require('../data/menu.json');
 const statisticsJSON = require('../data/statistics.json');
 const resourcesJSON = require('../data/resources.json');
 const blogsJSON = require('../data/blogs.json');
+const searchResultsJSON = require('../data/search-results.json');
+const topicsJSON = require('../data/topics.json');
 
 const mobileMenu = $('[data-htsa-id="mobileMenu"]');
 const PCMenuRight = $('[data-htsa-id="pcMenuRight"]');
@@ -29,6 +35,10 @@ const frontpageStatistics = $('[data-htsa-id="frontpageStatistics"]');
 const frontpageResources = $('[data-htsa-id="frontpageResources"]');
 const frontpageFeaturedBlogs = $('[data-htsa-id="featuredBlogCarousel"]');
 const frontpageLatestBlogs = $('[data-htsa-id="latestBlogs"]');
+const searchpageResults = $('[data-htsa-id="searchResults"]');
+const postListings = $('[data-htsa-id="postListings"]');
+const asideLatestPosts = $('[data-htsa-id="asideLatestPosts"]');
+const asideTrendingTopics = $('[data-htsa-id="asideTrendingTopics"]');
 
 jQuery(function ($) {
     /**
@@ -60,30 +70,58 @@ jQuery(function ($) {
     }
 
     /**
-     * Load frontpage statistics
+     * Load front page statistics
      */
     if (frontpageStatistics.length) {
         frontpageStatistics.prepend(frontpageStatisticsTemplate(statisticsJSON));
     }
 
     /**
-     * Load frontpage resources
+     * Load front page resources
      */
     if (frontpageResources.length) {
         frontpageResources.prepend(frontpageResourcesTemplate(resourcesJSON));
     }
 
     /**
-     * Load frontpage featured blogs
+     * Load front page featured blogs
      */
     if (frontpageFeaturedBlogs.length) {
         frontpageFeaturedBlogs.prepend(frontpageFeaturedBlogsTemplate(blogsJSON));
     }
 
     /**
-     * Load frontpage latest blogs
+     * Load front page latest blogs
      */
     if (frontpageLatestBlogs.length) {
         frontpageLatestBlogs.prepend(frontpageLatestBlogsTemplate(blogsJSON));
+    }
+
+    /**
+     * Load search page results
+     */
+    if (searchpageResults.length) {
+        searchpageResults.prepend(searchpageResultsTemplate(searchResultsJSON));
+    }
+
+    /**
+     * Load post page data
+     */
+    if (postListings.length) {
+        postListings.prepend(postListingsTemplate(blogsJSON));
+    }
+
+    /**
+     * Load aside latest posts
+     */
+    if (asideLatestPosts.length) {
+        asideLatestPosts.prepend(asideLatestPostsTemplate(blogsJSON));
+    }
+
+    /**
+     * Load aside trending topics
+     */
+    if (asideTrendingTopics.length) {
+        asideTrendingTopics.prepend(asideTrendingTopicsTemplate(topicsJSON));
     }
 });

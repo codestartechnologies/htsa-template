@@ -1,0 +1,34 @@
+
+{{#each all}}
+
+    <div class="row flex-column flex-md-row align-items-center pb-3 mb-5 gx-3 gx-lg-5">
+        <div class="col-12">
+            <h1 class="fs-4 fw-normal text-capitalize"> <a href="{{url}}" class="link-dark"> {{title}} </a></h1>
+        </div>
+        <div class="col-md-4">
+            <a href="{{url}}">
+
+                {{#if ($not_empty thumbnail)}}
+
+                    <img src="{{thumbnail}}" alt="" class="img-fluid d-block mb-3" />
+
+                {{else}}
+
+                    <img src="./assets/images/image.png" alt="" class="img-fluid d-block mb-3" />
+
+                {{/if}}
+
+            </a>
+        </div>
+        <div class="col-md-8">
+            <div class="mb-3">
+                <small class="text-primary text-uppercase"> {{date}} </small>
+                <p> {{$stringExcerpt content}} </p>
+                <div>
+                    <a href="{{url}}" class="btn btn-sm btn-outline-dark text-capitalize rounded-0">see post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{/each}}
