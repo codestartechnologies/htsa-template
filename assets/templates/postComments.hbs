@@ -1,0 +1,57 @@
+
+{{#if ($not_empty_array all)}}
+
+    <div class="ui hidden divider"></div>
+    <h3 class="ui horizontal section header divider text-capitalize"> {{all.length}} Comments on this post</h3>
+    <!-- Comments -->
+    <div class="ui small feed" >
+
+    {{#each all}}
+
+        <div class="event">
+            <div class="label">
+                <i class="circular user icon"></i>
+            </div>
+            <div class="content">
+                <div class="summary">
+                    <a href=""> {{name}} </a>
+
+                    {{#if ($isCommentReply reply)}}
+
+                        replied to <a href=""> {{reply_name}}'s</a> comment
+
+                    {{else}}
+
+                        added a comment
+
+                    {{/if}}
+
+                    <div class="date"> {{date}} </div>
+                </div>
+                <div class="extra text"> {{comment}} </div>
+                <div class="meta">
+                    <a class="like">
+                        <i class="like icon"></i>
+
+                        {{#if ($not_empty likes)}}
+
+                            {{likes}} likes
+
+                        {{/if}}
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    {{/each}}
+
+    </div>
+    <!-- End Comments -->
+
+{{else}}
+
+    <div class="ui hidden divider"></div>
+    <p class="fs-3 fw-normal text-center text-muted"> Be the first to add a comment on this post </p>
+
+{{/if}}

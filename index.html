@@ -54,9 +54,8 @@
     <link rel="stylesheet" href="./bower_components/tiny-slider/dist/tiny-slider.css" />
 
     <!-- HTSA CSS -->
-    <link rel="stylesheet" href="./assets/css/htsa-bootstrap-components.css" />
-    <link rel="stylesheet" href="./assets/css/htsa.css" />
-    <link rel="stylesheet" href="./assets/css/htsa-responsive.css" />
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap_components_css.min.css" />
+    <link rel="stylesheet" href="./assets/dist/css/htsa_css.min.css" />
 </head>
 <body>
 
@@ -262,26 +261,34 @@
                     <div class="row flex-column flex-lg-row gy-5">
                         <!-- Frontpage Sidebar -->
                         <aside class="col-lg-4 col-xl-3">
-                            <div class="vstack align-items-center">
-                                <div class="mb-4">
-                                    <div class="ui small rectangle test ad" data-text="Advertisement"></div>
-                                </div>
-                                <div class="mb-4">
-                                    <h4 class="fs-5 text-capitalize fw-semibold mb-3">Trending topics</h4>
-                                    <div>
-                                        <ul class="nav flex-column text-end" data-htsa-id="asideTrendingTopics"></ul>
-                                    </div>
-                                </div>
-                                <div class="mb-4">
-                                    <div class="ui vertical rectangle test ad" data-text="Advertisement"></div>
-                                </div>
-                                <div class="mb-4">
-                                    <div class="ui square button test ad" data-text="Square Button"></div>
-                                </div>
-                                <div class="mb-4">
-                                    <div class="ui vertical rectangle test ad" data-text="Advertisement"></div>
+                            <!-- Advertisement -->
+                            <div class="mb-4 vstack align-items-center">
+                                <div class="ui small rectangle test ad" data-text="Advertisement"></div>
+                            </div>
+                            <!-- End Advertisement -->
+                            <!-- Trending Topics -->
+                            <div class="mb-4 vstack align-items-center">
+                                <h4 class="fs-5 text-capitalize text-center fw-semibold mb-3">Trending topics</h4>
+                                <div>
+                                    <ul class="nav flex-column text-end" data-htsa-id="asideTrendingTopics"></ul>
                                 </div>
                             </div>
+                            <!-- End Trending Topics -->
+                            <!-- Advertisement -->
+                            <div class="mb-4 vstack align-items-center">
+                                <div class="ui vertical rectangle test ad" data-text="Advertisement"></div>
+                            </div>
+                            <!-- End Advertisement -->
+                            <!-- Advertisement -->
+                            <div class="mb-4 vstack align-items-center">
+                                <div class="ui square button test ad" data-text="Square Button"></div>
+                            </div>
+                            <!-- End Advertisement -->
+                            <!-- Advertisement -->
+                            <div class="mb-4 vstack align-items-center">
+                                <div class="ui vertical rectangle test ad" data-text="Advertisement"></div>
+                            </div>
+                            <!-- End Advertisement -->
                         </aside>
                         <!-- End Frontpage Sidebar -->
                         <main class="order-first order-lg-last col-lg-8 col-xl-9">
@@ -430,8 +437,9 @@
     <!-- Tiny Slider JS -->
     <script src="./bower_components/tiny-slider/dist/min/tiny-slider.js"></script>
     <!-- HTSA js -->
-    <script src="./assets/js/htsa-template-bundled.js"></script>
-    <script src="./assets/js/htsa.js"></script>
+    <script src="./assets/dist/js/bootstrap_components_js.min.js"></script>
+    <script src="./assets/dist/js/htsa_templates.min.js"></script>
+    <script src="./assets/dist/js/htsa_js.min.js"></script>
 
 </body>
 </html>

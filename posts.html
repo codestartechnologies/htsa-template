@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/loader.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/menu.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/modal.min.css" />
+    <link rel="stylesheet" href="./bower_components/semantic/dist/components/search.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/sidebar.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/transition.min.css" />
 
@@ -51,9 +52,8 @@
     <link rel="stylesheet" href="./bower_components/tiny-slider/dist/tiny-slider.css" />
 
     <!-- HTSA CSS -->
-    <link rel="stylesheet" href="./assets/css/htsa-bootstrap-components.css" />
-    <link rel="stylesheet" href="./assets/css/htsa.css" />
-    <link rel="stylesheet" href="./assets/css/htsa-responsive.css" />
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap_components_css.min.css" />
+    <link rel="stylesheet" href="./assets/dist/css/htsa_css.min.css" />
 </head>
 <body>
 
@@ -137,45 +137,62 @@
                 <div class="row flex-column flex-lg-row g-5">
                     <main class="col-lg-8 col-xl-9">
                         <h3 class="ui horizontal section header divider">Posts</h3>
-                        <div class="htsa-vertical-posts" data-htsa-id="postListings"></div>
-                        <!-- Pagination -->
-                        <div class="ui black circular labels text-center">
-                            <a class="ui label"><i class="left angle icon align-middle me-0"></i></a>
-                            <a class="ui label">1</a>
-                            <a class="ui label">2</a>
-                            <a class="ui label">3</a>
-                            <a class="ui label">4</a>
-                            <a class="ui label">5</a>
-                            <a class="ui label"><i class="right angle icon align-middle me-0"></i></a>
-                        </div>
-                        <!-- End Pagination -->
+                        <div data-htsa-id="postListings"></div>
                         <div class="ui hidden divider"></div>
                     </main>
                     <!-- Posts Sidebar -->
                     <aside class="col-lg-4 col-xl-3">
-                        <div class="vstack align-items-center">
-                            <div class="mb-4">
-                                <div class="ui small rectangle test ad" data-text="Advertisement"></div>
-                            </div>
-                            <div class="mb-4">
-                                <h4 class="fs-5 text-capitalize fw-semibold mb-3">Trending topics</h4>
-                                <div>
-                                    <ul class="nav flex-column text-end" data-htsa-id="asideTrendingTopics"></ul>
-                                </div>
-                            </div>
-                            <div class="mb-4">
-                                <div class="ui square button test ad" data-text="Square Button"></div>
-                            </div>
-                            <div class="mb-4">
-                                <h4 class="fs-5 text-capitalize fw-semibold mb-3">Latest Posts</h4>
-                                <div>
-                                    <ul class="nav flex-column htsa-vertical-posts" data-htsa-id="asideLatestPosts"></ul>
-                                </div>
-                            </div>
-                            <div class="mb-4">
-                                <div class="ui vertical rectangle test ad" data-text="Advertisement"></div>
+                        <!-- Search Form -->
+                        <div class="mb-4 vstack align-items-center">
+                            <div class="ui search icon input">
+                                <i class="search icon"></i>
+                                <input type="text" placeholder="search" class="prompt" />
                             </div>
                         </div>
+                        <!-- End Search Form -->
+                        <!-- Advertisement -->
+                        <div class="mb-4 vstack align-items-center">
+                            <div class="ui small rectangle test ad" data-text="Advertisement"></div>
+                        </div>
+                        <!-- End Advertisement -->
+                        <!-- Trending Topics -->
+                        <div class="mb-4 vstack align-items-center">
+                            <h4 class="fs-5 text-capitalize text-center fw-semibold mb-3">Trending topics</h4>
+                            <div>
+                                <ul class="nav flex-column text-end" data-htsa-id="asideTrendingTopics"></ul>
+                            </div>
+                        </div>
+                        <!-- End Trending Topics -->
+                        <!-- Tag Cloud -->
+                        <div class="mb-4">
+                            <h4 class="fs-5 text-capitalize text-center fw-semibold mb-3">Tags</h4>
+                            <div>
+                                <div class="ui mini tag labels text-center">
+                                    <a href="" class="ui label text-capitalize">blog</a>
+                                    <a href="" class="ui label text-capitalize">md</a>
+                                    <a href="" class="ui label text-capitalize">anambra state</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Tag Cloud -->
+                        <!-- Advertisement -->
+                        <div class="mb-4 vstack align-items-center">
+                            <div class="ui square button test ad" data-text="Square Button"></div>
+                        </div>
+                        <!-- End Advertisement -->
+                        <!-- Latest Posts -->
+                        <div class="mb-4 vstack align-items-center">
+                            <h4 class="fs-5 text-capitalize text-center fw-semibold mb-3">Latest Posts</h4>
+                            <div>
+                                <ul class="nav flex-column htsa-vertical-posts" data-htsa-id="asideLatestPosts"></ul>
+                            </div>
+                        </div>
+                        <!-- End Latest Posts -->
+                        <!-- Advertisement -->
+                        <div class="mb-4 vstack align-items-center">
+                            <div class="ui vertical rectangle test ad" data-text="Advertisement"></div>
+                        </div>
+                        <!-- End Advertisement -->
                     </aside>
                     <!-- End Posts Sidebar -->
                 </div>
@@ -272,8 +289,9 @@
     <!-- Tiny Slider JS -->
     <script src="./bower_components/tiny-slider/dist/min/tiny-slider.js"></script>
     <!-- HTSA js -->
-    <script src="./assets/js/htsa-template-bundled.js"></script>
-    <script src="./assets/js/htsa.js"></script>
+    <script src="./assets/dist/js/bootstrap_components_js.min.js"></script>
+    <script src="./assets/dist/js/htsa_templates.min.js"></script>
+    <script src="./assets/dist/js/htsa_js.min.js"></script>
 
 </body>
 </html>

@@ -1,34 +1,65 @@
 
-{{#each all}}
+{{#if ($not_empty_array all)}}
 
-    <div class="row flex-column flex-md-row align-items-center pb-3 mb-5 gx-3 gx-lg-5">
-        <div class="col-12">
-            <h1 class="fs-4 fw-normal text-capitalize"> <a href="{{url}}" class="link-dark"> {{title}} </a></h1>
-        </div>
-        <div class="col-md-4">
-            <a href="{{url}}">
+    <div class="htsa-vertical-posts">
 
-                {{#if ($not_empty thumbnail)}}
+    {{#each all}}
 
-                    <img src="{{thumbnail}}" alt="" class="img-fluid d-block mb-3" />
+        <div class="row flex-column flex-md-row align-items-center pb-3 mb-5 gx-3 gx-lg-5">
+            <div class="col-12">
+                <h1 class="fs-4 fw-normal text-capitalize"> <a href="{{url}}" class="link-dark"> {{title}} </a></h1>
+            </div>
+            <div class="col-md-4">
+                <a href="{{url}}">
 
-                {{else}}
+                    {{#if ($not_empty thumbnail)}}
 
-                    <img src="./assets/images/image.png" alt="" class="img-fluid d-block mb-3" />
+                        <img src="{{thumbnail}}" alt="" class="img-fluid d-block mb-3" />
 
-                {{/if}}
+                    {{else}}
 
-            </a>
-        </div>
-        <div class="col-md-8">
-            <div class="mb-3">
-                <small class="text-primary text-uppercase"> {{date}} </small>
-                <p> {{$stringExcerpt content}} </p>
-                <div>
-                    <a href="{{url}}" class="btn btn-sm btn-outline-dark text-capitalize rounded-0">see post</a>
+                        <img src="./assets/images/image.png" alt="" class="img-fluid d-block mb-3" />
+
+                    {{/if}}
+
+                </a>
+            </div>
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <small class="text-primary text-uppercase"> {{date}} </small>
+                    <p> {{$stringExcerpt content}} </p>
+                    <div>
+                        <a href="{{url}}" class="btn btn-sm btn-outline-dark text-capitalize rounded-0">see post</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+    {{/each}}
+
     </div>
 
-{{/each}}
+    <!-- Pagination -->
+    <div class="ui black circular labels text-center">
+        <a class="ui label"><i class="left angle icon align-middle me-0"></i></a>
+        <a class="ui label">1</a>
+        <a class="ui label">2</a>
+        <a class="ui label">3</a>
+        <a class="ui label">4</a>
+        <a class="ui label">5</a>
+        <a class="ui label"><i class="right angle icon align-middle me-0"></i></a>
+    </div>
+    <!-- End Pagination -->
+
+{{else}}
+
+<div>
+    <div class="ui centered medium image mb-2">
+        <img src="./assets/images/image.png" />
+    </div>
+    <p class="fs-5">
+        We are yet to add contents to this archive...
+    </p>
+</div>
+
+{{/if}}
