@@ -89,7 +89,7 @@
         },
         {
             "label"     : "principal officers",
-            "url"       : "#"
+            "url"       : "profiles.html"
         },
         {
             "label"     : "our responsibilities",
@@ -140,12 +140,12 @@
             "url"       : "posts.html"
         },
         {
-            "label"     : "press releases",
-            "url"       : "#"
+            "label"     : "widgets",
+            "url"       : "widgets.html"
         },
         {
-            "label"     : "speeches and presentations",
-            "url"       : "#"
+            "label"     : "empty page",
+            "url"       : "empty.html"
         },
         {
             "label"     : "events / programs",

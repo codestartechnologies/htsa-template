@@ -18,6 +18,7 @@ const frontpageLatestBlogsTemplate = require('../templates/frontpageLatestBlogs.
 const searchpageResultsTemplate = require('../templates/searchpageResults.hbs');
 const postListingsTemplate = require('../templates/postListings.hbs');
 const postCommentsTemplate = require('../templates/postComments.hbs');
+const postCommentsTemplate2 = require('../templates/postComments2.hbs');
 const asideLatestPostsTemplate = require('../templates/asideLatestPosts.hbs');
 const asideTrendingTopicsTemplate = require('../templates/asideTrendingTopics.hbs');
 const postsWidgetTemplate = require('../templates/postsWidgets.hbs');
@@ -135,6 +136,7 @@ jQuery(function ($) {
      */
     if (postComments.length) {
         postComments.prepend(postCommentsTemplate(commentsJSON));
+        postComments.prepend(postCommentsTemplate2(commentsJSON));
     }
 
     /**

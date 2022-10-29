@@ -2,30 +2,20 @@
 {{#if ($not_empty_array all)}}
 
     <div class="ui hidden divider"></div>
-    <h3 class="ui horizontal section header divider text-capitalize"> {{all.length}} Comments on this post</h3>
+    <h3 class="ui horizontal section header divider text-capitalize d-none d-sm-table"> {{all.length}} Comments on this post</h3>
+    <h3 class="fw-normal text-center text-capitalize border-bottom pb-2 d-sm-none"> {{all.length}} Comments on this post</h3>
     <!-- Comments -->
     <div class="ui small feed" >
 
     {{#each all}}
 
         <div class="event">
-            <div class="label">
+            <div class="label d-none">
                 <i class="circular user icon"></i>
             </div>
-            <div class="content">
+            <div class="content ms-0">
                 <div class="summary">
-                    <a href=""> {{name}} </a>
-
-                    {{#if ($isCommentReply reply)}}
-
-                        replied to <a href=""> {{reply_name}}'s</a> comment
-
-                    {{else}}
-
-                        added a comment
-
-                    {{/if}}
-
+                    <a href=""> {{name}} </a> added a comment
                     <div class="date"> {{date}} </div>
                 </div>
                 <div class="extra text"> {{comment}} </div>
@@ -43,6 +33,37 @@
                 </div>
             </div>
         </div>
+
+        {{#if ($not_empty_array replies)}}
+            {{#each replies}}
+
+                <div class="event">
+                    <div class="label d-none">
+                        <i class="circular user icon"></i>
+                    </div>
+                    <div class="content ms-0">
+                        <div class="summary">
+                            <a href=""> {{name}} </a> replied to <a href=""> {{reply_name}}'s</a> comment
+                            <div class="date"> {{date}} </div>
+                        </div>
+                        <div class="extra text"> {{comment}} </div>
+                        <div class="meta">
+                            <a class="like">
+                                <i class="like icon"></i>
+
+                                {{#if ($not_empty likes)}}
+
+                                    {{likes}} likes
+
+                                {{/if}}
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            {{/each}}
+        {{/if}}
 
     {{/each}}
 

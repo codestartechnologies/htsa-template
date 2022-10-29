@@ -43,6 +43,14 @@
 /* Small Monitor Screens */
 
 @media screen and (min-width: 992px) {
+    /* Utilities */
+
+    /* Sizing */
+
+    .htsa-fs-md-5 {
+        font-size: 1.25rem !important;
+    }
+
     /* Mobile Sidebar */
     [data-htsa-toggle="mobileSidebar"] {
         display: none !important;
@@ -89,8 +97,8 @@
         height: 420px;
     }
 
-    .htsa-background-image-content-center,
-    .htsa-background-image-content-left {
+    .htsa-background-image-content-center > *,
+    .htsa-background-image-content-left > * {
         width: 60%;
     }
 

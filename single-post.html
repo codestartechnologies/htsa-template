@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/ad.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/button.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/checkbox.min.css" />
+    <link rel="stylesheet" href="./bower_components/semantic/dist/components/comment.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/dimmer.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/divider.min.css" />
     <link rel="stylesheet" href="./bower_components/semantic/dist/components/dropdown.min.css" />
@@ -139,7 +140,11 @@
             <div class="container">
                 <div class="row flex-column flex-lg-row g-5">
                     <main class="col-lg-8 col-xl-9">
-                        <h3 class="ui horizontal section header divider">Single Post</h3>
+                        <h1 class="ui horizontal section divider fs-5 mt-0 text-capitalize d-none d-sm-table">single post</h1>
+                        <h4 class="fw-normal text-center text-capitalize border-bottom pb-2 d-sm-none">single post</h4>
+
+                        <div class="ui hidden divider"></div>
+
                         <!-- Single Post Body -->
                         <div>
                             <h1 class="text-uppercase">Latest update on the penalties for over-speeding</h1>
@@ -364,18 +369,14 @@
     <!-- End Page Content -->
 
     <!-- Search Modal -->
-    <div class="ui modal" data-htsa-id="searchModal">
+    <div class="ui basic modal" data-htsa-id="searchModal">
         <i class="close icon"></i>
-        <div class="header">
-            Search our website:
-        </div>
         <div class="content">
             <!-- Search Form -->
             <form action="search.html" method="get" class="ui form">
                 <div class="field">
-                    <input type="search" name="q" class="border-0 text-center fs-3" placeholder="Enter your query..." />
+                    <input type="search" name="q" class="rounded-0 border border-white border-2 border-top-0 border-start-0 border-end-0 text-center fs-3 bg-transparent text-white" placeholder="Search our website:" />
                 </div>
-                <button type="submit" class="ui black right labeled icon button d-block mx-auto">Search <i class="search icon"></i> </button>
             </form>
             <!-- End Search Form -->
         </div>
