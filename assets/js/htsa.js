@@ -20,6 +20,7 @@ jQuery( function($) {
     const featuredBlogCarousel = $('[data-htsa-id="featuredBlogCarousel"]');
     const semanticUICheckbox = $('[data-htsa-id="semanticUICheckbox"]');
     const contactForm = $('[data-htsa-id="contactForm"]');
+    // const asidePostsCarousel = $('aside [data-bs-ride="carousel"]');
     const fixedPCMenuSetter = $('[data-htsa-id="fixedPCMenuSetter"]');
 
     /***
@@ -122,6 +123,13 @@ jQuery( function($) {
             },
             inline: true
         });
+    }
+
+    /**
+     * Activate aside bootstrap carousel
+     */
+    if (asidePostsCarousel.length) {
+        // new bootstrap.Carousel(asidePostsCarousel);
     }
 
     /**

@@ -1,15 +1,15 @@
 
-{{#each featured}}
+{{#each all}}
 
     <div>
 
         {{#if ($not_empty thumbnail)}}
 
-        <div class="h-auto htsa-background-image htsa-background-image-scroll shadow-lg htsa-bg-dark" style="background-image: url('{{thumbnail}}');">
+        <div class="htsa-post-widget-b h-auto htsa-background-image htsa-background-image-scroll shadow-lg htsa-bg-dark" style="background-image: url('{{thumbnail}}');">
 
         {{else}}
 
-        <div class="h-auto htsa-background-image htsa-background-image-scroll shadow-lg htsa-bg-dark">
+        <div class="htsa-post-widget-b h-auto htsa-background-image htsa-background-image-scroll shadow-lg htsa-bg-dark">
 
         {{/if}}
 
@@ -24,7 +24,7 @@
                     </div>
                     <div class="ui hidden divider d-none d-sm-block"></div>
                     <div>
-                        <a href="{{url}}" class="btn btn-sm btn-outline-light">Read More</a>
+                        <a href="{{url}}" class="btn btn-sm btn-outline-light htsa-hover-link-animate-up">Read More</a>
                     </div>
                 </div>
             </div>

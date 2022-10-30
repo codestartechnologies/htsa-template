@@ -1,0 +1,39 @@
+
+{{#if ($not_empty_array featured)}}
+
+    {{!-- <div class="carousel slide htsa-background-image-carousel" data-bs-ride="carousel"> --}}
+        <div class="carousel-inner">
+
+            {{#each featured}}
+
+                {{#if ($isFirstArrayItem id)}}
+
+                <div class="carousel-item active">
+
+                {{else}}
+
+                <div class="carousel-item">
+
+                {{/if}}
+
+                    {{#if ($not_empty thumbnail)}}
+
+                    <div class="htsa-background-image htsa-background-image-scroll mb-2" style="background-image: url('{{thumbnail}}');"></div>
+
+                    {{else}}
+
+                    <div class="htsa-background-image htsa-background-image-scroll mb-2" style="background-image: url('./assets/images/image.png');"></div>
+
+                    {{/if}}
+
+                    <a href="{{url}}" class="link-dark fs-5 lh-sm text-capitalize d-block"> {{title}} </a>
+                    <small class="text-primary"> {{date}} </small>
+                </div>
+
+            {{/each}}
+
+        </div>
+    {{!-- </div> --}}
+    {{!-- <div class="ui divider"></div> --}}
+
+{{/if}}

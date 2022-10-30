@@ -80,8 +80,32 @@ a {
 
 /* Transitions */
 
-.htsa-link-transition {
+.htsa-hover-link-transition {
     transition: color .6s ease-in-out !important;
+}
+
+.htsa-hover-link-animate-up {
+    transition: transform .3s ease !important;
+}
+
+.htsa-hover-link-animate-up:hover {
+    transform: translateY(-0.4rem) !important;
+}
+
+.htsa-hover-card-animate-up {
+    transition: transform .4s ease !important;
+}
+
+.htsa-hover-card-animate-up:hover {
+    transform: translateY(-1.563rem) !important;
+}
+
+.htsa-hover-image-animate-zoom {
+    transition: transform .9s ease !important;
+}
+
+.htsa-hover-image-animate-zoom:hover {
+    transform: scale(1.2) !important;
 }
 
 
@@ -258,17 +282,17 @@ footer .htsa-footer-social-menu i {
 
 /* Resources */
 
-[data-htsa-id="frontpageResources"] .card {
-    transition: transform .4s ease;
+.htsa-card-widget-a {
+    transition: transform .4s ease !important;
 }
 
-[data-htsa-id="frontpageResources"] .card > :last-child {
+.htsa-card-widget-a.ui.card > :last-child {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
 
-[data-htsa-id="frontpageResources"] .card:hover {
-    transform: translateY(-1.563rem);
+.htsa-card-widget-a:hover {
+    transform: translateY(-1.563rem) !important;
 }
 
 /* Blogs */
@@ -279,16 +303,16 @@ footer .htsa-footer-social-menu i {
 }
 
 [data-htsa-id="featuredBlogCarousel"] .card > :first-child,
-[data-htsa-id="latestBlogs"] .card > :first-child {
+.htsa-post-widget-a.ui.card > :first-child {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
 }
 
-[data-htsa-id="latestBlogs"] img {
+.htsa-post-widget-a img {
     transition: transform .9s ease;
 }
 
-[data-htsa-id="latestBlogs"] img:hover {
+.htsa-post-widget-a img:hover {
     transform: scale(1.2);
 }
 
@@ -297,7 +321,6 @@ footer .htsa-footer-social-menu i {
 
 .htsa-slider-dots .tns-nav {
     text-align: center;
-    /* z-index: 999; */
     padding-bottom: 1rem;
 }
 
@@ -340,6 +363,6 @@ aside .htsa-vertical-posts .nav-item .nav-link {
     padding: 0 0 0.25rem 0;
 }
 
-aside [data-htsa-id="asideCarousel"] .htsa-background-image {
+aside .htsa-background-image-carousel .htsa-background-image {
     height: 150px !important;
 }

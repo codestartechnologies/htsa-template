@@ -1,29 +1,33 @@
 {
     "featured": [
         {
+            "id"        : 1,
             "thumbnail" : "./assets/images/atma-accident-4.jpg",
             "title"     : "Accident happened today along the express",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
-            "date"      : "2022-01-12",
+            "date"      : "1st July, 2022",
             "url"       : "single-post.html"
         },
         {
+            "id"        : 2,
             "thumbnail" : "./assets/images/atma-operation-4.jpg",
             "title"     : "MD visits those involved in bloody auto crash",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
-            "date"      : "2022-01-18",
+            "date"      : "22nd July, 2022",
             "url"       : "single-post.html"
         },
         {
+            "id"        : 3,
             "thumbnail" : "./assets/images/atma-operation-3.jpg",
             "title"     : "Slow down on the runway",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
-            "date"      : "2022-03-22",
+            "date"      : "4th March, 2022",
             "url"       : "single-post.html"
         }
     ],
     "all": [
         {
+            "id"        : 1,
             "thumbnail" : "./assets/images/atma-vehicle.jpg",
             "title"     : "driving in severe weather",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
@@ -31,6 +35,7 @@
             "url"       : "single-post.html"
         },
         {
+            "id"        : 2,
             "thumbnail" : "./assets/images/atma-accident-3.jpg",
             "title"     : "new school bus safety campaign",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
@@ -38,6 +43,7 @@
             "url"       : "single-post.html"
         },
         {
+            "id"        : 5,
             "thumbnail" : "./assets/images/atma-vehicle-2.jpg",
             "title"     : "requirements for obtaining a drivers license ",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
@@ -45,6 +51,7 @@
             "url"       : "single-post.html"
         },
         {
+            "id"        : 8,
             "thumbnail" : "",
             "title"     : "latest update on the penalties for over-speeding",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
