@@ -20,8 +20,9 @@ jQuery( function($) {
     const featuredBlogCarousel = $('[data-htsa-id="featuredBlogCarousel"]');
     const semanticUICheckbox = $('[data-htsa-id="semanticUICheckbox"]');
     const contactForm = $('[data-htsa-id="contactForm"]');
-    // const asidePostsCarousel = $('aside [data-bs-ride="carousel"]');
-    const fixedPCMenuSetter = $('[data-htsa-id="fixedPCMenuSetter"]');
+    const scrollUpButton = $('[data-htsa-id="scrollToTop"]');
+    const preloader = $('[data-htsa-id="preloader"]');
+    const footer = $('footer');
 
     /***
      * Mobile Sidebar
@@ -126,23 +127,33 @@ jQuery( function($) {
     }
 
     /**
-     * Activate aside bootstrap carousel
+     * Preloader
      */
-    if (asidePostsCarousel.length) {
-        // new bootstrap.Carousel(asidePostsCarousel);
+    if (preloader.length) {
+        preloader.fadeOut();
     }
 
     /**
-     * Make PC menu fixed when specified target element is within sight
+     * Activate scroll to top button
      */
-    if (fixedPCMenuSetter.length && PCMenu.length) {
-        fixedPCMenuSetter.visibility({
+    if (scrollUpButton.length) {
+        $.scrollUp({
+            scrollFrom: 'bottom',
+            scrollTrigger: scrollUpButton
+        });
+    }
+
+    /**
+     * Show scroll to top button when user navigate to footer
+     */
+    if (footer.length && scrollUpButton.length) {
+        footer.visibility({
             once: false,
-            onBottomPassed: function () {
-                PCMenu.addClass('fixed');
+            onTopVisible: function () {
+                scrollUpButton.fadeIn();
             },
-            onBottomPassedReverse: function () {
-                PCMenu.removeClass('fixed');
+            onTopVisibleReverse: function () {
+                scrollUpButton.fadeOut();
             },
         });
     }

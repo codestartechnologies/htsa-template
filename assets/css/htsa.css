@@ -383,3 +383,21 @@ aside .htsa-background-image-carousel .htsa-background-image {
     width: 80px;
     clip-path: circle();
 }
+
+/* Scoll to top button */
+
+[data-htsa-id="scrollToTop"] {
+    display: none;
+    z-index: 99 !important;
+    background-color: #e0e1e288 !important;
+}
+
+/* Preloader */
+
+[data-htsa-id="preloader"] {
+    background-color: #CEE3E2;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 9999 !important;
+}
