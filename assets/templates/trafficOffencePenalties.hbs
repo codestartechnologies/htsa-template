@@ -1,0 +1,48 @@
+
+{{#if ($not_empty_array all)}}
+
+    <!-- Traffic Offence Penalties Table -->
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered align-middle caption-top">
+            <caption>HTSA Approved Tarrif Penalties</caption>
+            <thead class="table-light">
+                <tr class="align-top fs-5 text-uppercase text-center">
+                    <th rowspan="2">S/N</th>
+                    <th rowspan="2" class="text-danger">Offence</th>
+                    <th colspan="8" class="text-danger">Vehicle Categories</th>
+                </tr>
+                <tr>
+                    <th>Cars</th>
+                    <th>Bus / Pick Up Shuttle</th>
+                    <th>Mini Bus</th>
+                    <th>Luxury Bus</th>
+                    <th>Trailer</th>
+                    <th>Lorry</th>
+                    <th>Keke Napepe</th>
+                    <th>Motorcycle</th>
+                </tr>
+            </thead>
+            <tbody class="text-capitalize">
+
+                {{#each all}}
+
+                    <tr>
+                        <td> {{id}} </td>
+                        <td class="fw-bolder"> {{offence}} </td>
+
+                        {{#each vehicle_categories}}
+
+                        <td> {{fine}} </td>
+
+                        {{/each}}
+
+                    </tr>
+
+                {{/each}}
+
+            </tbody>
+        </table>
+    </div>
+    <!-- End Traffic Offence Penalties Table -->
+
+{{/if}}

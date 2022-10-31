@@ -21,6 +21,17 @@ a {
 
 /* Utilities */
 
+
+.htsa-link-brown {
+    color: #a62b2b !important;
+}
+
+.htsa-link-brown:hover,
+.htsa-link-brown:focus {
+    color: #782626 !important;
+}
+
+
 /* Text */
 
 .htsa-ff-roboto {
@@ -365,4 +376,10 @@ aside .htsa-vertical-posts .nav-item .nav-link {
 
 aside .htsa-background-image-carousel .htsa-background-image {
     height: 150px !important;
+}
+
+/* Profile List */
+.htsa-profile-list img {
+    width: 80px;
+    clip-path: circle();
 }

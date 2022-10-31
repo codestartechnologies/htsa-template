@@ -23,6 +23,10 @@ const asideLatestPostsTemplate = require('../templates/asideLatestPosts.hbs');
 const asideTrendingTopicsTemplate = require('../templates/asideTrendingTopics.hbs');
 const asidePostsCarouselTemplate = require('../templates/asidePostsCarousel.hbs');
 const postsWidgetTemplate = require('../templates/postsWidgets.hbs');
+const trafficOffencePenaltiesTemplate = require('../templates/trafficOffencePenalties.hbs');
+const principalOfficersTemplate = require('../templates/principalOfficers.hbs');
+const profilesListTemplate = require('../templates/profilesList.hbs');
+const headOfficesTemplate = require('../templates/headOffices.hbs');
 
 const menuLinksJSON = require('../data/menu.json');
 const statisticsJSON = require('../data/statistics.json');
@@ -31,6 +35,10 @@ const blogsJSON = require('../data/blogs.json');
 const searchResultsJSON = require('../data/search-results.json');
 const topicsJSON = require('../data/topics.json');
 const commentsJSON = require('../data/comments.json');
+const penaltiesJSON = require('../data/penalties.json');
+const officersJSON = require('../data/officers.json');
+const profilesJSON = require('../data/profiles.json');
+const headOfficesJSON = require('../data/head-offices.json');
 
 const mobileMenu = $('[data-htsa-id="mobileMenu"]');
 const PCMenuRight = $('[data-htsa-id="pcMenuRight"]');
@@ -47,6 +55,10 @@ const asideLatestPosts = $('[data-htsa-id="asideLatestPosts"]');
 const asideTrendingTopics = $('[data-htsa-id="asideTrendingTopics"]');
 const asidePostsCarousel = $('[data-htsa-id="asideCarousel"]');
 const postsWidget = $('[data-htsa-id="postsWidget"]');
+const trafficOffencePenaltiesTable = $('[data-htsa-id="penaltiesTable"]');
+const principalOfficersTable = $('[data-htsa-id="principalOfficersTable"]');
+const profilesList = $('[data-htsa-id="profilesList"]');
+const headOffices = $('[data-htsa-id="headOffices"]');
 
 jQuery(function ($) {
     /**
@@ -153,5 +165,33 @@ jQuery(function ($) {
      */
     if (asidePostsCarousel.length) {
         asidePostsCarousel.prepend(asidePostsCarouselTemplate(blogsJSON));
+    }
+
+    /**
+     * Load data for traffic offence penalties table
+     */
+    if (trafficOffencePenaltiesTable.length) {
+        trafficOffencePenaltiesTable.prepend(trafficOffencePenaltiesTemplate(penaltiesJSON));
+    }
+
+    /**
+     * Load data for principal officers table
+     */
+    if (principalOfficersTable.length) {
+        principalOfficersTable.prepend(principalOfficersTemplate(officersJSON));
+    }
+
+    /**
+     * Load profile lists
+     */
+    if (profilesList.length) {
+        profilesList.prepend(profilesListTemplate(profilesJSON));
+    }
+
+    /**
+     * Load head offices
+     */
+    if (headOffices.length) {
+        headOffices.prepend(headOfficesTemplate(headOfficesJSON));
     }
 });

@@ -1,0 +1,30 @@
+
+{{#if ($not_empty_array all)}}
+
+    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4">
+
+        {{#each all}}
+
+            <div>
+                <div class="ui fluid raised- card">
+                    <div class="ui slide masked reveal image">
+                        <img src="{{thumbnail}}" class="visible content" />
+                        <div class="hidden content p-2 text-center">
+                            <h5 class="fw-bolder">Direction:</h5>
+                            <p> {{address}} </p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4 class="text-capitalize"> {{name}} </h4>
+                        <div>
+                            <span class="text-muted">Location: </span> <span> {{location}} </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {{/each}}
+
+    </div>
+
+{{/if}}

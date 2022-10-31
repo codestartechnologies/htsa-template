@@ -1,0 +1,42 @@
+
+{{#if ($not_empty_array all)}}
+
+    <div class="list-group list-group-flush htsa-profile-list">
+
+        {{#each all}}
+
+            <div class="list-group-item border-bottom-0">
+                <div
+                    class="d-flex flex-wrap flex-column flex-md-row align-items-center align-items-md-start justify-content-md-center gap-3 gap-md-5">
+                    <div class="col-auto col-md-3 text-center">
+                        <a href="{{url}}">
+
+                            {{#if ($not_empty avatar)}}
+
+                            <img src="{{avatar}}" alt="" class="img-fluid align-top" />
+
+                            {{else}}
+
+                            <img src="./assets/images/man.png" alt="" class="img-fluid align-top" />
+
+                            {{/if}}
+
+                        </a>
+                        <h5 class="text-capitalize fs-6 mt-2"> {{name}} </h5>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7 text-center text-md-start">
+                        <p>
+                            <small><span class="text-primary">Position Held: </span><b> {{position_held}} </b></small>
+                        </p>
+                        <p class="d-none d-md-block"> {{$stringExcerpt content}} </p>
+                        <small><a href="{{url}}" class="link-secondary">View Profile</a></small>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+        {{/each}}
+
+    </div>
+
+{{/if}}

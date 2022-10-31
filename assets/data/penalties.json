@@ -1,0 +1,498 @@
+{
+    "all": [
+        {
+            "id"                    : 1,
+            "offence"               : "road obstruction",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "10,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "5,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 2,
+            "offence"               : "route violation",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "40,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "10,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "5,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 3,
+            "offence"               : "caution sign violation",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "10,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "5,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 4,
+            "offence"               : "dangerous driving",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "10,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "5,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 5,
+            "offence"               : "drunk driving",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "10,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "5,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 6,
+            "offence"               : "trading on the road",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "10,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "5,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 7,
+            "offence"               : "driving without seat belts",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "10,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "5,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 8,
+            "offence"               : "other violation offences",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "10,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "5,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 9,
+            "offence"               : "towing",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "10,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "6,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 10,
+            "offence"               : "assaulting officers",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "20,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 11,
+            "offence"               : "attempt to bribe officers",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "30,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "100,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "20,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 12,
+            "offence"               : "demurrage / day after 24hrs",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : "3,000"
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : "3,000"
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : "3,000"
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : "5,000"
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : "5,000"
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : "5,000"
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "1,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "1,000"
+                }
+            ]
+        },
+        {
+            "id"                    : 13,
+            "offence"               : "ban (Express)",
+            "vehicle_categories"    : [
+                {
+                    "label" : "cars",
+                    "fine"  : ""
+                },
+                {
+                    "label" : "bus / pick up shuttle",
+                    "fine"  : ""
+                },
+                {
+                    "label" : "mini bus",
+                    "fine"  : ""
+                },
+                {
+                    "label" : "luxury bus",
+                    "fine"  : ""
+                },
+                {
+                    "label" : "trailer",
+                    "fine"  : ""
+                },
+                {
+                    "label" : "lorry",
+                    "fine"  : ""
+                },
+                {
+                    "label" : "keke napepe",
+                    "fine"  : "20,000"
+                },
+                {
+                    "label" : "motorcycle",
+                    "fine"  : "30,000"
+                }
+            ]
+        }
+    ]
+}

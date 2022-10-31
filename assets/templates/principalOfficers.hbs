@@ -1,0 +1,54 @@
+
+{{#if ($not_empty_array all)}}
+
+    <div class="table-responsive">
+        <table class="table table-bordered align-middle caption-top">
+            <caption>Our Zonal Commanders</caption>
+            <thead class="table-dark text-center fs-5">
+                <tr>
+                    <th>S/N</th>
+                    <th>Photograph</th>
+                    <th>Name</th>
+                    <th>Zone</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+
+                {{#each all}}
+
+                    <tr>
+                        <td> {{id}} </td>
+                        <td>
+
+                            {{#if ($not_empty avatar)}}
+
+                            <a href="{{avatar}}">
+                                <img src="{{avatar}}" alt="" class="img-fluid" style="width: 90px;" />
+                            </a>
+
+                            {{else}}
+
+                            <img src="./assets/images/man.png" alt="" class="img-fluid" style="width: 90px;" />
+
+                            {{/if}}
+
+                        </td>
+                        <td class="fw-bold"> {{name}} </td>
+                        <td> {{zone}} </td>
+                        <td>
+                            <span class="d-inline-flex flex-column gap-3">
+                                <span> <i class="envelope icon"></i> <a href="mailto:"> {{contact.email}} </a> </span>
+                                <span> <i class="phone square icon"></i> <a href="tel:+" class="link-dark"> {{contact.phone}} </a>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+
+                {{/each}}
+
+            </tbody>
+        </table>
+    </div>
+
+{{/if}}

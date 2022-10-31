@@ -26,6 +26,7 @@
     "metismenu": "^3.0.7",
     "animate-css": "^4.1.1",
     "waypoints": "waypoint#^4.0.1",
-    "tiny-slider": "^2.9.4"
+    "tiny-slider": "^2.9.4",
+    "scrollup": "^2.4.1"
   }
 }

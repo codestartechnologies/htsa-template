@@ -22,7 +22,8 @@
                 <h1 class="fs-5 fw-semibold text-capitalize border-bottom pb-2">
                     <a href="{{url}}" class="link-dark htsa-hover-link-transition htsa-text-hover-primary"> {{title}} </a>
                 </h1>
-                <p> {{$stringExcerpt content}} </p>
+                <small><a href="{{url}}" class="link-secondary d-md-none">Read More</a></small>
+                <p class="d-none d-md-block"> {{$stringExcerpt content}} </p>
             </div>
         </div>
     </div>

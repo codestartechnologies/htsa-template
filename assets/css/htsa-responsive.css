@@ -81,6 +81,10 @@
         padding-bottom: 0;
     }
 
+    footer .htsa-footer-menu.htsa-footer-menu-b .nav-item {
+        border-right: none !important;
+    }
+
     /* Statistics */
     [data-htsa-id="statisticsValue"] {
         font-size: 5.625rem;
