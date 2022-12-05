@@ -204,11 +204,13 @@ footer .htsa-footer-social-menu .list-group-item a {
     margin: 0.25rem;
     padding: 0.188rem 0.125rem;
     border: 1px solid #dddddd;
+    display: block;
 }
 
 footer .htsa-footer-social-menu i {
     height: initial;
     vertical-align: middle;
+    margin: 0;
 }
 
 
