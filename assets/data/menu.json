@@ -3,7 +3,6 @@
         {
             "label"     : "about us",
             "url"       : "#",
-            "active"    : true,
             "dropdown"  : [
                 {
                     "label"     : "who we are",
@@ -59,7 +58,6 @@
         {
             "label"     : "resources",
             "url"       : "#",
-            "active"    : true,
             "dropdown"  : [
                 {
                     "label"     : "news",
