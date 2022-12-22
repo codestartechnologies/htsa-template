@@ -118,9 +118,9 @@ jQuery( function($) {
     if (contactForm.length) {
         contactForm.form({
             fields: {
-                htsaContactFormName: ["empty", "regExp[/^\w+$/gi]"],
-                htsaContactFormEmail: ["empty", "regExp[/^\w+$/gi]", "email"],
-                htsaContactFormMessage: ["empty", "regExp[/^\w+$/gi]"]
+                htsaContactFormName: ["empty", "maxLength[100]"],
+                htsaContactFormEmail: ["empty", "email", "maxLength[100]"],
+                htsaContactFormMessage: ["empty", "maxLength[2000]"]
             },
             inline: true
         });
