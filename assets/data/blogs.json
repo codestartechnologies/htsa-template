@@ -2,7 +2,7 @@
     "featured": [
         {
             "id"        : 1,
-            "thumbnail" : "./assets/images/atma-accident-4.jpg",
+            "thumbnail" : "./assets/images/blog-1.jpeg",
             "title"     : "Accident happened today along the express",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
             "date"      : "1st July, 2022",
@@ -10,7 +10,7 @@
         },
         {
             "id"        : 2,
-            "thumbnail" : "./assets/images/atma-operation-4.jpg",
+            "thumbnail" : "./assets/images/blog-2.jpeg",
             "title"     : "MD visits those involved in bloody auto crash",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
             "date"      : "22nd July, 2022",
@@ -18,7 +18,7 @@
         },
         {
             "id"        : 3,
-            "thumbnail" : "./assets/images/atma-operation-3.jpg",
+            "thumbnail" : "./assets/images/blog-3.jpeg",
             "title"     : "Slow down on the runway",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
             "date"      : "4th March, 2022",
@@ -28,7 +28,7 @@
     "all": [
         {
             "id"        : 1,
-            "thumbnail" : "./assets/images/atma-vehicle.jpg",
+            "thumbnail" : "./assets/images/blog-4.jpeg",
             "title"     : "driving in severe weather",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
             "date"      : "1st April, 2022",
@@ -36,7 +36,7 @@
         },
         {
             "id"        : 2,
-            "thumbnail" : "./assets/images/atma-accident-3.jpg",
+            "thumbnail" : "./assets/images/blog-5.jpeg",
             "title"     : "new school bus safety campaign",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
             "date"      : "8th May, 2022",
@@ -44,7 +44,7 @@
         },
         {
             "id"        : 5,
-            "thumbnail" : "./assets/images/atma-vehicle-2.jpg",
+            "thumbnail" : "./assets/images/blog-1.jpeg",
             "title"     : "requirements for obtaining a drivers license ",
             "content"   : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates aliquam consequatur? Quas distinctio modi eligendi laboriosam deserunt tempora id quaerat reiciendis? Ea nesciunt blanditiis repellendus beatae neque, unde tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure laborum error amet facilis, totam laudantium molestias nostrum aperiam repellat deleniti, quis rerum atque quia consectetur recusandae repellendus perferendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure laborum dolores officia perspiciatis inventore. Natus ratione alias eaque culpa nulla, cupiditate odit ab, qui, pariatur accusamus eum consectetur maxime.",
             "date"      : "11th May, 2022",

@@ -3,19 +3,19 @@
         {
             "name"          : "Region Zone A1",
             "location"      : "Awka",
-            "thumbnail"     : "./assets/images/head-office-1.jpg",
+            "thumbnail"     : "./assets/images/office-1.jpg",
             "address"       : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus culpa esse iusto at odio minus maxime ullam dicta iste veritatis ad expedita, eos cumque fuga omnis atque est eveniet numquam?"
         },
         {
             "name"          : "Region Zone A2",
             "location"      : "Onitsha",
-            "thumbnail"     : "./assets/images/head-office-2.jpg",
+            "thumbnail"     : "./assets/images/office-2.jpg",
             "address"       : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus culpa esse iusto at odio minus maxime ullam dicta iste veritatis ad expedita, eos cumque fuga omnis atque est eveniet numquam?"
         },
         {
             "name"          : "Region Zone B5",
             "location"      : "Nnewi",
-            "thumbnail"     : "./assets/images/head-office-3.jpg",
+            "thumbnail"     : "./assets/images/office-3.jpg",
             "address"       : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus culpa esse iusto at odio minus maxime ullam dicta iste veritatis ad expedita, eos cumque fuga omnis atque est eveniet numquam?"
         }
     ]

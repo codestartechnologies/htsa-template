@@ -23,7 +23,7 @@
         {
             "id"        : 3,
             "name"      : "PO OSADEBAMWEN",
-            "avatar"    : "./assets/images/officer-3.jpeg",
+            "avatar"    : "",
             "zone"      : "Region B4 Command",
             "contact"   : {
                 "email" : "poosadebamwen@gmail.com",
@@ -33,7 +33,7 @@
         {
             "id"        : 4,
             "name"      : "JA OWOADE",
-            "avatar"    : "./assets/images/officer-4.jpeg",
+            "avatar"    : "",
             "zone"      : "Region C2 Command",
             "contact"   : {
                 "email" : "jaowoade@gmail.com",
@@ -43,7 +43,7 @@
         {
             "id"        : 5,
             "name"      : "M SHEHU",
-            "avatar"    : "./assets/images/officer-5.jpeg",
+            "avatar"    : "",
             "zone"      : "Region E4 Command",
             "contact"   : {
                 "email" : "mshehu@gmail.com",
@@ -53,7 +53,7 @@
         {
             "id"        : 6,
             "name"      : "OI AMEH",
-            "avatar"    : "./assets/images/officer-6.jpeg",
+            "avatar"    : "./assets/images/officer-2.jpg",
             "zone"      : "Region R1 Command",
             "contact"   : {
                 "email" : "oiameh@gmail.com",
