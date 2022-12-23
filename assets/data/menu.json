@@ -168,6 +168,14 @@
         {
             "label"     : "MD HTSA",
             "url"       : "single-profile.html"
+        },
+        {
+            "label"     : "Widgets",
+            "url"       : "widgets.html"
+        },
+        {
+            "label"     : "Search Page",
+            "url"       : "search.html"
         }
     ]
 }
