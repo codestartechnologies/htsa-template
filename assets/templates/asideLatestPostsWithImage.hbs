@@ -1,0 +1,24 @@
+
+{{#each all}}
+
+    <li class="nav-item d-flex flex-row">
+        <div class="pe-1">
+
+            {{#if ($not_empty thumbnail)}}
+
+            <img src="{{thumbnail}}" alt="" class="img-fluid" style="max-width: 150px;" />
+
+            {{else}}
+
+            <img src="./assets/images/image.png" alt="" class="img-fluid" style="max-width: 150px;" />
+
+            {{/if}}
+
+        </div>
+        <div>
+            <a href="single-post.html" class="nav-link text-capitalize link-dark"> {{title}} </a>
+            <small class="text-muted fst-italic"> - {{date}} </small>
+        </div>
+    </li>
+
+{{/each}}

@@ -20,6 +20,7 @@ const postListingsTemplate = require('../templates/postListings.hbs');
 const postCommentsTemplate = require('../templates/postComments.hbs');
 const postCommentsTemplate2 = require('../templates/postComments2.hbs');
 const asideLatestPostsTemplate = require('../templates/asideLatestPosts.hbs');
+const asideLatestPostsWithImageTemplate = require('../templates/asideLatestPostsWithImage.hbs');
 const asideTrendingTopicsTemplate = require('../templates/asideTrendingTopics.hbs');
 const asidePostsCarouselTemplate = require('../templates/asidePostsCarousel.hbs');
 const postsWidgetTemplate = require('../templates/postsWidgets.hbs');
@@ -52,6 +53,7 @@ const searchpageResults = $('[data-htsa-id="searchResults"]');
 const postListings = $('[data-htsa-id="postListings"]');
 const postComments = $('[data-htsa-id="postComments"]');
 const asideLatestPosts = $('[data-htsa-id="asideLatestPosts"]');
+const asideLatestPostsWithImage = $('[data-htsa-id="asideLatestPostsWithImage"]');
 const asideTrendingTopics = $('[data-htsa-id="asideTrendingTopics"]');
 const asidePostsCarousel = $('[data-htsa-id="asideCarousel"]');
 const postsWidget = $('[data-htsa-id="postsWidget"]');
@@ -136,6 +138,13 @@ jQuery(function ($) {
      */
     if (asideLatestPosts.length) {
         asideLatestPosts.prepend(asideLatestPostsTemplate(blogsJSON));
+    }
+
+    /**
+     * Load aside latest posts with widget
+     */
+    if (asideLatestPostsWithImage.length) {
+        asideLatestPostsWithImage.prepend(asideLatestPostsWithImageTemplate(blogsJSON));
     }
 
     /**
