@@ -21,6 +21,7 @@ jQuery( function($) {
     const semanticUICheckbox = $('[data-htsa-id="semanticUICheckbox"]');
     const contactForm = $('[data-htsa-id="contactForm"]');
     const commentForm = $('[data-htsa-id="commentForm"]');
+    const newsletterForm = $('[data-htsa-id="newsletterForm"]');
     const scrollUpButton = $('[data-htsa-id="scrollToTop"]');
     const preloader = $('[data-htsa-id="preloader"]');
     const footer = $('footer');
@@ -137,6 +138,19 @@ jQuery( function($) {
                 htsaCommentFormEmail: ["empty", "email", "maxLength[100]"],
                 htsaCommentFormWebsite: ["empty", "maxLength[100]"],
                 htsaCommentFormComment: ["empty", "maxLength[800]"]
+            },
+            inline: true
+        });
+    }
+
+    /**
+     * Add validation to newsletter form widget
+     */
+    if (newsletterForm.length) {
+        newsletterForm.form({
+            fields: {
+                htsaNewsletterFormName: ["empty", "maxLength[100]"],
+                htsaNewsletterFormEmail: ["empty", "email", "maxLength[100]"],
             },
             inline: true
         });
