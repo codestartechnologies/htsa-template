@@ -1,0 +1,36 @@
+
+{{#each all}}
+
+    <!-- Single Review -->
+    <div>
+        <div class="ui centered card">
+            <div class="content">
+                <div class="text-center">
+                    <div class="mb-2">
+
+                        {{#if ($not_empty avatar)}}
+
+                        <img src="{{avatar}}" alt="" class="img-fluid htsa-circular" style="max-width: 50px;" />
+
+                        {{else}}
+
+                        <img src="./assets/images/man.png" alt="" class="img-fluid htsa-circular" style="max-width: 50px;" />
+
+                        {{/if}}
+
+                    </div>
+                    <h1 class="fs-5 text-capitalize"> {{name}} </h1>
+                    <div class="ui large star rating" data-rating="{{rating}}" data-max-rating="5"></div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="description">
+                    <p class="text-center">
+                        <small> {{content}} </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Single Review -->
+
+{{/each}}

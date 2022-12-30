@@ -158,4 +158,14 @@ jQuery( function($) {
         });
     }
 
+    /**
+     * Enable rating
+     */
+    if ( $('.ui.rating').length ) {
+        $('.ui.rating').rating({
+            clearable: false,
+            interactive: false
+        });
+    }
+
 } );

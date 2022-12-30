@@ -15,6 +15,7 @@ const frontpageStatisticsTemplate = require('../templates/frontpageStatistics.hb
 const frontpageResourcesTemplate = require('../templates/frontpageResources.hbs');
 const frontpageFeaturedBlogsTemplate = require('../templates/frontpageFeaturedBlogs.hbs');
 const frontpageLatestBlogsTemplate = require('../templates/frontpageLatestBlogs.hbs');
+const frontpageReviewsTemplate = require('../templates/frontpageReviews.hbs');
 const searchpageResultsTemplate = require('../templates/searchpageResults.hbs');
 const postListingsTemplate = require('../templates/postListings.hbs');
 const postCommentsTemplate = require('../templates/postComments.hbs');
@@ -40,6 +41,7 @@ const penaltiesJSON = require('../data/penalties.json');
 const officersJSON = require('../data/officers.json');
 const profilesJSON = require('../data/profiles.json');
 const headOfficesJSON = require('../data/head-offices.json');
+const reviewsJSON = require('../data/reviews.json');
 
 const mobileMenu = $('[data-htsa-id="mobileMenu"]');
 const PCMenuRight = $('[data-htsa-id="pcMenuRight"]');
@@ -49,6 +51,7 @@ const frontpageStatistics = $('[data-htsa-id="frontpageStatistics"]');
 const frontpageResources = $('[data-htsa-id="frontpageResources"]');
 const frontpageFeaturedBlogs = $('[data-htsa-id="featuredBlogCarousel"]');
 const frontpageLatestBlogs = $('[data-htsa-id="latestBlogs"]');
+const frontpageReviews = $('[data-htsa-id="featuredReviews"]');
 const searchpageResults = $('[data-htsa-id="searchResults"]');
 const postListings = $('[data-htsa-id="postListings"]');
 const postComments = $('[data-htsa-id="postComments"]');
@@ -117,6 +120,13 @@ jQuery(function ($) {
      */
     if (frontpageLatestBlogs.length) {
         frontpageLatestBlogs.prepend(frontpageLatestBlogsTemplate(blogsJSON));
+    }
+
+    /**
+     * Load front page featured reviews
+     */
+    if (frontpageReviews.length) {
+        frontpageReviews.prepend(frontpageReviewsTemplate(reviewsJSON));
     }
 
     /**

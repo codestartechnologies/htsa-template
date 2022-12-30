@@ -1,0 +1,25 @@
+{
+    "all": [
+        {
+            "id"            : 1,
+            "avatar"        : "./assets/images/profile-6.png",
+            "name"          : "john doe",
+            "content"       : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, enim! Omnis harum repellendus assumenda distinctio rerum. Doloribus enim voluptate soluta. Excepturi numquam culpa ea nulla, incidunt veritatis inventore ratione ducimus?",
+            "rating"        : "2"
+        },
+        {
+            "id"            : 2,
+            "avatar"        : "./assets/images/profile-3.png",
+            "name"          : "jane doe",
+            "content"       : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut repellendus beatae rem sed eum delectus explicabo sint! Aspernatur quos voluptate doloremque eligendi odit, vero necessitatibus animi id. Repudiandae, esse odio.",
+            "rating"        : "4"
+        },
+        {
+            "id"            : 3,
+            "avatar"        : "",
+            "name"          : "sarah doe",
+            "content"       : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, enim! Omnis harum repellendus assumenda distinctio rerum. Doloribus enim voluptate soluta. Excepturi numquam culpa ea nulla, incidunt veritatis inventore ratione ducimus?",
+            "rating"        : "5"
+        }
+    ]
+}
