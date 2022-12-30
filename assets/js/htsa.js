@@ -20,6 +20,7 @@ jQuery( function($) {
     const featuredBlogCarousel = $('[data-htsa-id="featuredBlogCarousel"]');
     const semanticUICheckbox = $('[data-htsa-id="semanticUICheckbox"]');
     const contactForm = $('[data-htsa-id="contactForm"]');
+    const commentForm = $('[data-htsa-id="commentForm"]');
     const scrollUpButton = $('[data-htsa-id="scrollToTop"]');
     const preloader = $('[data-htsa-id="preloader"]');
     const footer = $('footer');
@@ -121,6 +122,21 @@ jQuery( function($) {
                 htsaContactFormName: ["empty", "maxLength[100]"],
                 htsaContactFormEmail: ["empty", "email", "maxLength[100]"],
                 htsaContactFormMessage: ["empty", "maxLength[2000]"]
+            },
+            inline: true
+        });
+    }
+
+    /**
+     * Add validation to comment form widget
+     */
+    if (commentForm.length) {
+        commentForm.form({
+            fields: {
+                htsaCommentFormName: ["empty", "maxLength[100]"],
+                htsaCommentFormEmail: ["empty", "email", "maxLength[100]"],
+                htsaCommentFormWebsite: ["empty", "maxLength[100]"],
+                htsaCommentFormComment: ["empty", "maxLength[800]"]
             },
             inline: true
         });
