@@ -58,7 +58,7 @@
 
     /* Header Menu */
     [data-htsa-id="headerMenu"] img.htsa-pc-menu-logo {
-        width: 4.7rem !important;
+        width: 100px !important;
     }
 
     /* PC Menu */
