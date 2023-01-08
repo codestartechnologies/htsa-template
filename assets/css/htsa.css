@@ -205,8 +205,9 @@ footer .htsa-footer-social-menu .list-group-item {
 
 footer .htsa-footer-social-menu .list-group-item a {
     margin: 0.25rem;
-    padding: 0.188rem 0.125rem;
+    padding: 0rem 0.247rem;
     border: 1px solid #dddddd;
+    border-radius: 0.313rem;
     display: block;
 }
 
