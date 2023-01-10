@@ -7,7 +7,7 @@
  * https://www.gnu.org/licenses/agpl-3.0.en.html
  */
 
-jQuery( function($) {
+$( function() {
 
     const mobileSidebar = $('[data-htsa-id="mobileSidebar"]');
     const mobileMenu = $('[data-htsa-id="mobileMenu"]');
@@ -17,13 +17,13 @@ jQuery( function($) {
     const statisticsValue = $('[data-htsa-id="statisticsValue"]');
     const semanticUIEmbed = $('[data-htsa-id="semanticUIEmbed"]');
     const frontpageCarouselLeft = $('[data-htsa-id="frontpageCarouselLeft"]');
+    const frontpageReviewsCarousel = $('[data-htsa-id="featuredReviews"]');
     const featuredBlogCarousel = $('[data-htsa-id="featuredBlogCarousel"]');
     const semanticUICheckbox = $('[data-htsa-id="semanticUICheckbox"]');
     const contactForm = $('[data-htsa-id="contactForm"]');
     const commentForm = $('[data-htsa-id="commentForm"]');
     const newsletterForm = $('[data-htsa-id="newsletterForm"]');
     const scrollUpButton = $('[data-htsa-id="scrollToTop"]');
-    const preloader = $('[data-htsa-id="preloader"]');
     const footer = $('footer');
 
     /***
@@ -88,7 +88,8 @@ jQuery( function($) {
     if (frontpageCarouselLeft.length) {
         tns({
             container: '[data-htsa-id="frontpageCarouselLeft"]',
-            mode: 'gallery',
+            // mode: 'gallery',
+            speed: 700,
             items: 1,
             autoplay: true,
             controls: false,
@@ -104,6 +105,30 @@ jQuery( function($) {
             autoplay: true,
             controls: false,
             autoplayButtonOutput: false
+        });
+    }
+
+    if (frontpageReviewsCarousel.length) {
+        tns({
+            container: '[data-htsa-id="featuredReviews"]',
+            items: 1,
+            gutter: 24,
+            // edgePadding: 10,
+            autoplay: true,
+            controls: false,
+            nav: false,
+            autoplayButtonOutput: false,
+            responsive: {
+                "768": {
+                    items: 2
+                },
+                "991": {
+                    items: 3
+                },
+                "1400": {
+                    items: 4
+                }
+            }
         });
     }
 
@@ -157,13 +182,6 @@ jQuery( function($) {
     }
 
     /**
-     * Preloader
-     */
-    if (preloader.length) {
-        preloader.fadeOut();
-    }
-
-    /**
      * Activate scroll to top button
      */
     if (scrollUpButton.length) {
@@ -196,6 +214,19 @@ jQuery( function($) {
             clearable: false,
             interactive: false
         });
+    }
+
+} );
+
+$( window ).on( 'load', function () {
+
+    const preloader = $('[data-htsa-id="preloader"]');
+
+    /**
+     * Preloader
+     */
+     if (preloader.length) {
+        preloader.fadeOut();
     }
 
 } );
