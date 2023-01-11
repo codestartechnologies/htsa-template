@@ -1,23 +1,21 @@
 
 {{#if ($not_empty_array all)}}
 
-    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 justify-content-lg-center">
+    <div class="row flex-column gy-4">
 
         {{#each all}}
 
             <div>
-                <div class="ui fluid raised- card">
-                    <div class="ui slide masked reveal image">
-                        <img src="{{thumbnail}}" class="visible content" />
-                        <div class="hidden content p-2 text-center">
-                            <h5 class="fw-bolder">Direction:</h5>
-                            <p> {{address}} </p>
+                <div class="border">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-12 col-lg-6 order-last">
+                            <div class="htsa-background-image htsa-background-image-scroll" style="background-image: url('{{thumbnail}}');"></div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <h4 class="text-capitalize"> {{name}} </h4>
-                        <div>
-                            <span class="text-muted">Location: </span> <span> {{location}} </span>
+                        <div class="col-12 col-lg-6 p-3">
+                            <h1 class="text-capitalize h3"> {{name}} </h1>
+                            <span class="text-primary">Location: </span> <span class="text-capitalize"> {{location}} </span>
+                            <div class="ui hidden divider"></div>
+                            <p> {{address}} </p>
                         </div>
                     </div>
                 </div>
