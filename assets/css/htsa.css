@@ -390,6 +390,13 @@ aside .htsa-background-image-carousel .htsa-background-image {
     clip-path: circle();
 }
 
+/* Contact Section */
+
+.htsa-contact-section .htsa-contact-card {
+    background-color: #111111;
+    color: #ffcc29;
+}
+
 /* Scoll to top button */
 
 [data-htsa-id="scrollToTop"] {
