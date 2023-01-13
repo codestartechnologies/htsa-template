@@ -1,13 +1,13 @@
 /**
- * htsa js - 0.1.0
- * https://codestar.com.ng
+ * htsa.js
+ * https://github.com/codestartechnologies/htsa-template
  *
  * Copyright 2022 Codestar Technologies
  * Released under AGPL-3.0-or-later
  * https://www.gnu.org/licenses/agpl-3.0.en.html
  */
 
-$( function() {
+jQuery( function($) {
 
     const mobileSidebar = $('[data-htsa-id="mobileSidebar"]');
     const mobileMenu = $('[data-htsa-id="mobileMenu"]');
@@ -20,7 +20,7 @@ $( function() {
     const frontpageReviewsCarousel = $('[data-htsa-id="featuredReviews"]');
     const featuredBlogCarousel = $('[data-htsa-id="featuredBlogCarousel"]');
     const semanticUICheckbox = $('[data-htsa-id="semanticUICheckbox"]');
-    const contactForm = $('[data-htsa-id="contactForm"]');
+    const contactForm = $('[data-htsa-id="contactForm"], form#commentform');
     const commentForm = $('[data-htsa-id="commentForm"]');
     const newsletterForm = $('[data-htsa-id="newsletterForm"]');
     const scrollUpButton = $('[data-htsa-id="scrollToTop"]');
@@ -218,9 +218,9 @@ $( function() {
 
 } );
 
-$( window ).on( 'load', function () {
+jQuery( window ).on( 'load', function () {
 
-    const preloader = $('[data-htsa-id="preloader"]');
+    const preloader = jQuery('[data-htsa-id="preloader"]');
 
     /**
      * Preloader

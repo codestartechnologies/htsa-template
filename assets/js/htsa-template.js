@@ -1,6 +1,6 @@
 /**
- * htsa template js - 0.1.0
- * https://codestar.com.ng
+ * htsa-template.js
+ * https://github.com/codestartechnologies/htsa-template
  *
  * Copyright 2022 Codestar Technologies
  * Released under AGPL-3.0-or-later
