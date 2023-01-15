@@ -1,16 +1,16 @@
 
 {{#each all}}
 
-    <li class="nav-item d-flex flex-row">
+    <li class="nav-item d-flex flex-row row-cols-2">
         <div class="pe-1">
 
             {{#if ($not_empty thumbnail)}}
 
-            <img src="{{thumbnail}}" alt="" class="img-fluid" style="max-width: 150px;" />
+            <img src="{{thumbnail}}" alt="" class="img-fluid" style="width: 150px;" />
 
             {{else}}
 
-            <img src="./assets/images/image.png" alt="" class="img-fluid" style="max-width: 150px;" />
+            <img src="./assets/images/image.png" alt="" class="img-fluid" style="width: 150px;" />
 
             {{/if}}
 
