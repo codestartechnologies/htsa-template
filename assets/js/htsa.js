@@ -20,8 +20,8 @@ jQuery( function($) {
     const frontpageReviewsCarousel = $('[data-htsa-id="featuredReviews"]');
     const featuredBlogCarousel = $('[data-htsa-id="featuredBlogCarousel"]');
     const semanticUICheckbox = $('[data-htsa-id="semanticUICheckbox"]');
-    const contactForm = $('[data-htsa-id="contactForm"], form#commentform');
-    const commentForm = $('[data-htsa-id="commentForm"]');
+    const contactForm = $('[data-htsa-id="contactForm"], form#contactform');
+    const commentForm = $('[data-htsa-id="commentForm"], form#commentform');
     const newsletterForm = $('[data-htsa-id="newsletterForm"]');
     const scrollUpButton = $('[data-htsa-id="scrollToTop"]');
     const footer = $('footer');
