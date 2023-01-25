@@ -146,6 +146,36 @@ a {
 }
 
 
+/* Top Header */
+
+.htsa-top-header-icons a {
+    display: inline-block;
+    color: #111111;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.htsa-top-header-icons a.facebook {
+    color: #0d6efd;
+}
+
+.htsa-top-header-icons a.twitter {
+    color: #0dcaf0;
+}
+
+.htsa-top-header-icons a.instagram {
+    color: #862222;
+}
+
+.htsa-top-header-icons a.youtube {
+    color: #dc3545;
+}
+
+.htsa-top-header-title {
+    font-size: 1rem;
+}
+
+
 /* Header Menu */
 
 [data-htsa-id="headerMenu"] i.icon {

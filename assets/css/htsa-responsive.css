@@ -16,6 +16,17 @@
 /* Tablet Screens */
 
 @media screen and (min-width: 768px) {
+
+    /* Top Header */
+
+    .htsa-top-header-icons {
+        display: none;
+    }
+
+    .htsa-top-header-title {
+        font-size: 1.25rem !important;
+    }
+
     /* Image Background */
     .htsa-background-image {
         height: 320px;
